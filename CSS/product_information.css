@@ -1,0 +1,275 @@
+@import url('./reset.css');
+
+body {
+  background: rgb(175, 66, 66);
+  background: radial-gradient(circle, rgb(138, 14, 14) 4%, rgb(34, 17, 14) 100%);
+  font-family: Candara, Arial, sans-serif;
+  padding-top: 30px;
+  width: 1440px;
+  margin: 0 auto;
+  
+}
+
+#header {
+
+  display: flex;
+  height: 150px;
+
+}
+
+.container {
+  width: 1440px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.container img {
+  /* float: left; */
+  padding: 10px 20px;
+  border-radius: 50%
+}
+
+nav {
+  float: right;
+  padding: 10px 60px;
+  width: 1000px;
+
+
+}
+
+.container ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.container nav li {
+  padding: 10px 20px;
+  float: left;
+  padding-top: 40px;
+}
+
+nav li:hover {
+  color: wheat;
+  font-weight: bold;
+
+
+  opacity: 0.5;
+}
+
+.container nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+
+.icon {
+  width: 100px;
+  padding-top: 40px;
+}
+
+
+
+
+/* 上面是導覽列 */
+
+
+
+
+.cover {
+
+  width: 1440px;
+  /* border: 1px solid #ccc; */
+
+
+
+}
+
+
+
+.cover img {
+
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  border-radius: 15px;
+
+
+}
+
+
+
+/* 上面為LOGO圖片 */
+
+
+.main {
+
+  width: 1440px;
+  height: 543px;
+  /* border: 1px solid #ccc; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.left {}
+
+.right {
+  padding-left: 30px;
+
+}
+
+
+
+.right h2 {
+
+  font-size: 40px;
+  color: white;
+  line-height: 1.6;
+  padding-bottom: 30px;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.right h3 {
+
+  font-size: 30px;
+  color: white;
+  line-height: 1.6;
+  padding-bottom: 30px;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.right p {
+
+  font-size: 1em;
+  color: white;
+  line-height: 1.6;
+
+}
+
+
+.button {
+
+  width: 1440px;
+  height: 80px;
+  /* border: 1px solid #ccc; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+
+}
+
+.shopping a {
+
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-right: 50px;
+  font-weight: bold;
+
+
+}
+
+.checkout a {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: bold;
+
+
+}
+
+
+/* 上面為按鈕 */
+
+
+
+/* 下面是底層 */
+
+
+.bottom{
+
+  width: 1440px;
+
+  display: flex;
+  padding-top: 20px;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(28 26 26);
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  
+ 
+}
+  
+
+.bottom p{
+
+  font-size: 20px;
+  
+ 
+
+}
+
+
+.bottom .left{
+  margin: auto 13px;
+  width: 400px;
+  line-height: 1.6;
+  color: white;
+  padding-left: 100px;
+  font-size: 8px;
+ 
+  
+
+
+}
+
+
+
+.bottom .min{
+  width: 300px;
+  color: white;
+  line-height: 1.6;
+  background-size:contain;
+  font-size: 8px;
+  margin-left: 50px;
+
+
+}
+
+
+.bottom .right{
+padding-top: 50px;
+padding-left: 300px;
+
+}
+
+.bottom .right img{
+  padding-left: 20px;
+  
+  }

@@ -1,0 +1,487 @@
+@import url('reset.css');
+
+body {
+  background: rgb(175, 66, 66);
+  background: radial-gradient(circle, rgb(138, 14, 14) 4%, rgb(34, 17, 14) 100%);
+  font-family: Candara, Arial, sans-serif;
+  padding-top: 30px;
+  width: 1440px;
+  margin: 0 auto;
+  
+}
+
+#header {
+
+  display: flex;
+  height: 150px;
+
+}
+
+.container {
+  width: 1440px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.container img {
+  /* float: left; */
+  padding: 10px 20px;
+  border-radius: 50%
+}
+
+nav {
+  float: right;
+  padding: 10px 60px;
+  width: 1000px;
+
+
+}
+
+.container ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.container nav li {
+  padding: 10px 20px;
+  float: left;
+  padding-top: 40px;
+}
+
+nav li:hover {
+  color: wheat;
+  font-weight: bold;
+
+
+  opacity: 0.5;
+}
+
+.container nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+
+.icon {
+  width: 100px;
+  padding-top: 40px;
+}
+
+
+
+
+/* 上面是導覽列 */
+
+
+.topimg {
+
+
+  background-position: 300px 3000px;
+}
+
+.topimg img {
+
+  width: 1440px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 50px;
+  display: block;
+
+
+
+
+}
+
+
+
+/* 上面是大圖片 */
+
+
+.word{
+padding-bottom: 200px;
+
+}
+
+
+.midvideo {
+
+
+  width: 1440px;
+  /* height: 902px; */
+  margin: 0 auto;
+  /* padding-bottom: 50px; */
+  background-image: url("../img/index/Blood_Eucalyptus.png");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 98%, 100%;
+  position: relative;
+
+
+}
+
+video {
+
+  width: 800px;
+  height: 537px;
+  margin: 87px 267px;
+  padding-bottom: 250px;
+}
+
+
+
+
+#image1 {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+
+}
+
+#image2 {
+  position: absolute;
+  top: 470px;
+  left: 1500px;
+}
+
+#image3 {
+  position: absolute;
+  top: 559px;
+  left: 1113px;
+  opacity: 0.5;
+  width: 300px;
+}
+
+
+#image4 {
+  position: absolute;
+  top: 763px;
+  left: 13px;
+  height: 400px;
+}
+
+#image5 {
+ 
+  position: absolute;
+  top: 879px;
+  left: 103px;
+  height: 50px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#image6  {
+
+  position: absolute;
+  top: 10px;
+  left: 1100px;
+  height: 500px;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+#image7  {
+  position: absolute;
+  top: 600px;
+  left: 3px;
+  height: 600px;
+  width: 1400px;
+  animation-name: cloud;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  opacity: .9;
+
+ 
+
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  50% {
+    transform: translateX(120px);
+  }
+  175% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+/* 上面是影片 */
+
+
+
+.books {
+
+
+  width: 1440px;
+  padding-bottom: 50px;
+  color: antiquewhite;
+
+
+}
+
+.books a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+
+
+
+}
+
+.books ul {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -5px;
+
+}
+
+.books li {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.books img {
+
+  box-shadow: 1px 1px 10px 3px;
+  margin-bottom: 20px;
+}
+
+.books img:hover {
+  box-shadow: 1px 1px 10px 10px;
+
+}
+
+
+
+
+
+/* 這邊是雲 */
+
+/* 上面是書籍展示 */
+
+
+.role {
+
+  width: 800px;
+  padding-bottom: 400px;
+  padding-left: 100px;
+}
+
+
+
+.text {
+display: flex;
+
+justify-content: center;
+
+}
+
+
+
+
+
+.role ul {
+
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.role li {
+  position: relative;
+  margin-right: 500px;
+
+}
+
+.role img {
+  position: absolute;
+  box-shadow: 1px 1px 10px 3px;
+  height: 300px;
+  width: 300px;
+  border-radius: 40%;
+
+}
+
+.role .aa {
+  display: block;
+}
+
+.role .aaa:hover {
+  display: none;
+}
+
+.role .bb {
+  display: block;
+}
+
+.role .bbb:hover {
+  display: none;
+}
+
+.role .cc {
+  display: block;
+}
+
+.role .ccc:hover {
+  display: none;
+}
+
+
+
+.role p {
+
+  padding-top: 50px;
+
+}
+
+
+/* 上面是人物圖片 */
+
+
+.narrative {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items:flex-start;
+  padding-bottom: 200px;
+  overflow: hidden;
+  text-indent: 4em;
+}
+
+
+.narrative .narr {
+
+  flex: 1;
+  text-align: center;
+}
+
+
+.narrative p {
+
+  width: 400px;
+  font-size: 30px;
+  color: aliceblue;
+
+  line-height: 1.6;
+  padding: 0px 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 下面是底層 */
+
+
+.bottom{
+
+  width: 1440px;
+
+  display: flex;
+  padding-top: 20px;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(28 26 26);
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  
+ 
+}
+  
+
+.bottom p{
+
+  font-size: 20px;
+  
+ 
+
+}
+
+
+.bottom .left{
+  margin: auto 13px;
+  width: 400px;
+  line-height: 1.6;
+  color: white;
+  padding-left: 100px;
+  font-size: 8px;
+ 
+  
+
+
+}
+
+
+
+.bottom .min{
+  width: 300px;
+  color: white;
+  line-height: 1.6;
+  background-size:contain;
+  font-size: 8px;
+  margin-left: 50px;
+
+
+}
+
+
+.right{
+padding-top: 50px;
+padding-left: 300px;
+
+}
+
+.right img{
+  padding-left: 20px;
+  
+  }

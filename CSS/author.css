@@ -1,0 +1,327 @@
+@import url('./reset.css');
+
+body {
+
+  background-color: black;
+  font-family: Candara, Arial, sans-serif;
+  padding-top: 30px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+body::before {
+
+  content: "";
+  background-image: url("../img/author/background.jpg");
+  position: fixed;
+  background-size: fixed;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  /* 設置透明度為 50% */
+}
+
+
+#header {
+
+  display: flex;
+  height: 150px;
+
+}
+
+.container {
+  width: 1440px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.container img {
+  /* float: left; */
+  padding: 10px 20px;
+  border-radius: 50%
+}
+
+nav {
+  float: right;
+  padding: 10px 60px;
+  width: 1000px;
+
+
+}
+
+.container ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.container nav li {
+  padding: 10px 20px;
+  float: left;
+  padding-top: 40px;
+}
+
+nav li:hover {
+  color: wheat;
+  font-weight: bold;
+
+
+  opacity: 0.5;
+}
+
+.container nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+
+.icon {
+  width: 100px;
+  padding-top: 40px;
+}
+
+
+
+
+/* 上面是導覽列 */
+
+
+
+.top{
+
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-top: 5px solid rgb(0, 0, 0);
+  border-bottom: 5px solid rgb(0, 0, 0);
+
+}
+
+
+.top .author{
+
+  margin-left: 106px;
+  margin-top: 78px;
+}
+
+
+.top .author img{
+
+width: 200px;
+display: block;
+border-radius: 30%;
+box-shadow: 1px 1px 10px 3px;
+color: aliceblue;
+}
+
+
+
+
+
+
+
+.top .introduce{
+
+  width: 500px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+
+
+.top .introduce p{
+
+font-size: 20px;
+line-height: 1.6;
+text-indent: 2em;
+color:whitesmoke;
+
+}
+
+
+/* 上面是作者介紹 */
+
+
+.mid{
+
+  width: 900px;
+  position: relative;
+  padding-bottom: 450px;
+
+}
+
+
+
+.mid img {
+  position: absolute;
+  height: 400px;
+}
+
+.mid img:first-child {
+ 
+  z-index: 2;
+  top: 11px;
+  left: 807px;
+}
+
+.mid img:last-child {
+  
+  z-index: 1;
+  top: -5px;
+  left: 216px;
+}
+
+.mid .back-image:hover{
+
+ display: none;
+
+}
+
+/* 上面是富江 */
+
+
+.bot{
+
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin:  0 auto;
+padding-bottom: 200px;
+}
+
+.bot h2{
+  font-size: 30px;
+  padding-bottom: 10PX;
+  font-weight: bold;
+  color: aliceblue;
+  padding-left: 39px;
+}
+
+
+.bot .lift{}
+
+
+.lift ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lift li {
+  flex: 0 0 calc(33.33% - 10px);
+  margin-right: -12px;
+  margin-bottom: 12px;
+}
+.lift li:last-child {
+  margin-right: 0;
+}
+
+.bot .lift img{
+
+width: 110px;
+height: 160px;
+margin-left: 47px;
+box-shadow: 1px 1px 10px 3px;
+color: aliceblue;
+}
+
+
+
+.holding{
+
+  
+}
+
+
+.holding img{
+
+  padding-top: 40PX;
+  width: 400px;
+  border-left: 6px solid #000000;
+  padding-left: 24px;
+  padding-bottom: 40PX;
+}
+
+
+
+
+
+
+
+/* 上面是作者和作品 */
+
+
+
+
+/* 下面是底層 */
+
+
+.bottom{
+
+  width: 1440px;
+
+  display: flex;
+  padding-top: 20px;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(28 26 26);
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  
+ 
+}
+  
+
+.bottom p{
+
+  font-size: 20px;
+  
+ 
+
+}
+
+
+.bottom .left{
+  margin: auto 13px;
+  width: 400px;
+  line-height: 1.6;
+  color: white;
+  padding-left: 100px;
+  font-size: 8px;
+ 
+  
+
+
+}
+
+
+
+.bottom .min{
+  width: 300px;
+  color: white;
+  line-height: 1.6;
+  background-size:contain;
+  font-size: 8px;
+  margin-left: 50px;
+
+
+}
+
+
+.right{
+padding-top: 50px;
+padding-left: 300px;
+
+}
+
+.right img{
+  padding-left: 20px;
+  
+  }

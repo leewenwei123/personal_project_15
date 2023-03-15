@@ -1,0 +1,631 @@
+@import url('./reset.css');
+
+body {
+  background: rgb(175, 66, 66);
+  background: radial-gradient(circle, rgb(138, 14, 14) 4%, rgb(34, 17, 14) 100%);
+  font-family: Candara, Arial, sans-serif;
+  padding-top: 30px;
+  width: 1440px;
+  margin: 0 auto;
+  display: block;
+  
+}
+
+#header {
+
+  display: flex;
+  height: 150px;
+
+}
+
+.container {
+  width: 1440px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.container img {
+  /* float: left; */
+  padding: 10px 20px;
+  border-radius: 50%
+}
+
+nav {
+  float: right;
+  padding: 10px 60px;
+  width: 1000px;
+
+
+}
+
+.container ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.container nav li {
+  padding: 10px 20px;
+  float: left;
+  padding-top: 40px;
+}
+
+nav li:hover {
+  color: wheat;
+  font-weight: bold;
+
+
+  opacity: 0.5;
+}
+
+.container nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+
+.icon {
+  width: 100px;
+  padding-top: 40px;
+}
+
+
+
+
+/* 上面是導覽列 */
+
+
+
+
+.wrapper {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  margin-bottom: 50px;
+  margin: 0 auto;
+
+
+
+}
+
+.topimg {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.topimg img {
+  
+}
+
+/* 上面是圖片而已 */
+
+.purchasinglist {
+
+  width: 1200px;
+  border: 4px solid black;
+
+}
+
+
+.purchasinglist .one {
+  height: 70px;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.purchasinglist .one h2 {
+  font-size: 2em;
+  text-align: left;
+  margin-left: 5px;
+  color: black;
+}
+
+
+
+.two {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background-color: rgb(241, 236, 236);
+}
+
+.two h3:nth-child(1) {
+  padding-left: 0%;
+}
+
+.two h3:nth-child(2) {
+  padding-left: 20%;
+}
+
+.two h3:nth-child(3) {
+  padding-left: 10%;
+}
+
+.two h3:nth-child(4) {
+  padding-right: 0%;
+}
+
+.two h3 {
+
+  font-size: 25px;
+}
+
+.three {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding-left: 20px;
+}
+
+
+
+.three .box {
+
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 190px;
+}
+
+.three .box .plus {
+  margin-right: 50px;
+  margin: 0 5px;
+  order: 3;
+}
+
+.three .box .reduce {
+  margin-right: 50px;
+  margin: 0 5px;
+  order: 1;
+}
+
+.three .box p {
+  margin-right: 50px;
+  margin: 0 5px;
+  order: 2;
+}
+
+
+
+.three img {
+
+  height: 150px;
+
+}
+
+.three .box .text {
+  font-size: 20px;
+  margin: 0;
+  margin: auto 30px;
+}
+
+.silver {
+  padding-left: 100px;
+
+}
+
+
+/* 上面是第一本書 */
+
+.fore {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding-left: 20px;
+}
+
+
+
+.fore .box {
+
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 190px;
+}
+
+.fore .box .plus {
+  margin-right: 50px;
+  margin: 0 5px;
+  order: 3;
+}
+
+.fore .box .reduce {
+  margin-right: 50px;
+  margin: 0 5px;
+  order: 1;
+}
+
+.fore .box p {
+  margin-right: 50px;
+  margin: 0 5px;
+  order: 2;
+}
+
+.fore img {
+
+  height: 150px;
+
+}
+
+.fore .box .text {
+  font-size: 20px;
+  margin: 0;
+  margin: auto 30px;
+}
+
+
+
+/* 上面是第二本書 */
+
+.five {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding-left: 20px;
+}
+
+
+.five .box {
+
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 190px;
+}
+
+.five .box .plus {
+  margin-right: 50px;
+  margin: 0 5px;
+  order: 3;
+}
+
+.five .box .reduce {
+  margin-right: 50px;
+  margin: 0 5px;
+  order: 1;
+}
+
+.five .box p {
+  margin-right: 50px;
+  margin: 0 5px;
+  order: 2;
+}
+
+.five img {
+
+  height: 150px;
+
+}
+
+.five .box .text {
+  font-size: 20px;
+  margin: 0;
+  margin: auto 30px;
+}
+
+.title {
+  padding-right: 20px;
+
+}
+
+/* 上面是第三本書 */
+
+/* 上面是商品資訊 */
+
+
+.gift {
+
+  width: 1200px;
+  height: 500px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+ padding-top: 20px;
+
+
+
+
+}
+
+.gift .delivery {
+
+  width: 800px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid black;
+
+
+
+}
+
+.gift .delivery .div {
+
+  padding-left: 40px;
+
+}
+
+
+
+
+
+.gift .delivery h4 {
+  height: 50px;
+  color: black;
+  border-bottom: 3px solid black;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 20px;
+  background-color: darkgrey;
+  height: 80px;
+}
+
+.gift .delivery p {
+
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 20px;
+  padding-bottom: 5px;
+
+}
+
+
+.tw {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  border: 2px solid black;
+
+}
+
+.tw a {
+  text-decoration: none;
+
+}
+
+.deliver {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  border: 2px solid black;
+
+}
+
+.deliver a {
+  text-decoration: none;
+
+}
+
+
+.payment {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  border: 2px solid black;
+
+}
+
+.payment a {
+  text-decoration: none;
+
+}
+
+/* 上面是左邊 */
+
+
+.sure {
+
+  width: 350px;
+  height: 500px;
+  background-color: #ffffff;
+  border: 5px solid black;
+}
+
+.gift .sure h4 {
+  height: 50px;
+  color: black;
+  border-bottom: 3px solid black;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 20px;
+  background-color: darkgrey;
+  height: 80px;
+}
+
+
+.money {
+  background-color: #c38752;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 25px;
+  border-radius: 40px;
+  font-weight: bold;
+  border: 2px solid black;
+
+
+}
+
+
+.sure {}
+
+
+.sure h5 {
+
+  font-weight: bold;
+}
+
+
+.sure .wire {
+
+  padding-left: 50px;
+
+}
+
+.sure p {
+  font-size: 2em;
+  line-height: 3em;
+  font-weight: bold;
+}
+
+.sure p:nth-child(2) {
+  padding-bottom: 30px;
+}
+
+.gift .sure .divv {
+  padding-left: 10px;
+}
+
+.sure .money {
+
+  margin: 0 auto;
+}
+
+.sure .money:hover{
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), -2px -2px 5px rgba(255, 255, 255, 0.3);
+
+}
+
+.sure .money a{
+
+text-decoration: none;
+color: #333;
+
+}
+
+/* 下面是底層 */
+
+
+.bottom{
+
+  width: 1440px;
+
+  display: flex;
+  padding-top: 20px;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(28 26 26);
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  
+ 
+}
+  
+
+.bottom p{
+
+  font-size: 20px;
+  
+ 
+
+}
+
+
+.bottom .left{
+  margin: auto 13px;
+  width: 400px;
+  line-height: 1.6;
+  color: white;
+  padding-left: 100px;
+  font-size: 8px;
+ 
+  
+
+
+}
+
+
+
+.bottom .min{
+  width: 300px;
+  color: white;
+  line-height: 1.6;
+  background-size:contain;
+  font-size: 8px;
+  margin-left: 50px;
+
+
+}
+
+
+.bottom .right{
+padding-top: 50px;
+padding-left: 300px;
+
+}
+
+.bottom .right img{
+  padding-left: 20px;
+  
+  }

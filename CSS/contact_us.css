@@ -1,0 +1,383 @@
+@import url('./reset.css');
+
+body {
+
+  background-color: black;
+  font-family: Candara, Arial, sans-serif;
+  padding-top: 30px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+body::before {
+
+  content: "";
+  background-image: url("../img/contact_us/background.jpg");
+  position: fixed;
+  background-size: fixed;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  /* 設置透明度為 50% */
+}
+
+
+#header {
+
+  display: flex;
+  height: 150px;
+
+}
+
+.container {
+  width: 1440px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.container img {
+  /* float: left; */
+  padding: 10px 20px;
+  border-radius: 50%
+}
+
+nav {
+  float: right;
+  padding: 10px 60px;
+  width: 1000px;
+
+
+}
+
+.container ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.container nav li {
+  padding: 10px 20px;
+  float: left;
+  padding-top: 40px;
+}
+
+nav li:hover {
+  color: wheat;
+  font-weight: bold;
+
+
+  opacity: 0.5;
+}
+
+.container nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+
+.icon {
+  width: 100px;
+  padding-top: 40px;
+}
+
+
+
+
+/* 上面是導覽列 */
+
+
+
+.cover {
+
+  width: 1440px;
+  /* border: 1px solid #ccc; */
+
+}
+
+.cover img {
+
+  display: block;
+  margin: 0 auto;
+  width: 480px;
+
+  padding-right: px;
+ 
+
+
+
+}
+
+
+
+
+
+/* 下面為按鈕 */
+
+
+
+.mai {
+
+  width: 1440px;
+  height: 215px;
+
+  margin: -40px auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+
+
+
+
+}
+
+/* .mai .lift {
+
+background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 270px;
+  height: 200px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 25px;
+  border-radius: 50px;
+  margin-right: 50px;
+  font-weight: bold;
+
+
+
+} */
+
+
+.mai .right {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 270px;
+  height: 200px;
+  text-align: center;
+  line-height: 49px;
+  font-size: 25px;
+  border-radius: 50px;
+  margin-right: 50px;
+  font-weight: bold;
+  
+}
+
+
+.name {
+
+  height: 30px;
+  width: 400px;
+
+}
+
+.phone {
+  height: 30px;
+  width: 400px;
+}
+
+.address {
+  height: 30px;
+  width: 400px;
+}
+
+.Subject {
+
+  height: 30px;
+  width: 400px;
+}
+
+textarea{
+
+  width: 400px;
+  height: 150px;
+  
+}
+
+.send{
+
+margin: -6 172px;
+color: rgb(9, 8, 8);
+font-weight:bold;
+font-size: 20px;
+margin-left: 164px;
+
+
+}
+
+
+.main {
+  margin: -82px 277px;
+  padding: 30px;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.line {
+  display: block;
+  width: 50px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.main ul {
+  width: 50%;
+  margin: 30px auto 0;
+
+}
+
+.main li {
+  margin-bottom: 10px;
+  margin: 15px auto;
+
+}
+
+.main p {
+  color: #ffffff;
+  font-size: 14px;
+
+}
+
+.main span {
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+
+
+
+
+/* 上面為按鈕 */
+
+
+.button {
+
+  width: 1440px;
+  height: 80px;
+  /* border: 1px solid #ccc; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+
+}
+
+.shopping a {
+
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin-right: 50px;
+  font-weight: bold;
+
+
+}
+
+.checkout a {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: bold;
+
+
+}
+
+
+/* 上面為按鈕 */
+
+/* 下面是底層 */
+
+
+.bottom{
+
+  width: 1440px;
+  margin-top: 300px;
+  display: flex;
+  padding-top: 20px;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(28 26 26);
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  
+ 
+}
+  
+
+.bottom p{
+
+  font-size: 20px;
+  
+ 
+
+}
+
+
+.bottom .left{
+  margin: auto 13px;
+  width: 400px;
+  line-height: 1.6;
+  color: white;
+  padding-left: 100px;
+  font-size: 8px;
+ 
+  
+
+
+}
+
+
+
+.bottom .min{
+  width: 300px;
+  color: white;
+  line-height: 1.6;
+  background-size:contain;
+  font-size: 8px;
+  margin-left: 50px;
+
+
+}
+
+
+.bottom .right{
+padding-top: 50px;
+padding-left: 300px;
+
+}
+
+.bottom .right img{
+  padding-left: 20px;
+  
+  }

@@ -1,0 +1,363 @@
+@import url('./reset.css');
+
+body {
+  background: rgb(175, 66, 66);
+  background: radial-gradient(circle, rgb(138, 14, 14) 4%, rgb(34, 17, 14) 100%);
+  font-family: Candara, Arial, sans-serif;
+  padding-top: 30px;
+  width: 1440px;
+  margin: 0 auto;
+  
+}
+
+#header {
+
+  display: flex;
+  height: 150px;
+
+}
+
+.container {
+  width: 1440px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.container img {
+  /* float: left; */
+  padding: 10px 20px;
+  border-radius: 50%
+}
+
+nav {
+  float: right;
+  padding: 10px 60px;
+  width: 1000px;
+
+
+}
+
+.container ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.container nav li {
+  padding: 10px 20px;
+  float: left;
+  padding-top: 40px;
+}
+
+nav li:hover {
+  color: wheat;
+  font-weight: bold;
+
+
+  opacity: 0.5;
+}
+
+.container nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+
+.icon {
+  width: 100px;
+  padding-top: 40px;
+}
+
+
+
+
+/* 上面是導覽列 */
+
+
+
+.wrapper {
+  width: 940px;
+  height: 800px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  padding-top: 100px;
+  background-image: url(../img/Member_login/cat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.mai {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 50px;
+  /* border: 1px solid bisque; */
+
+}
+
+.mai .name{
+  height: 70px; 
+  font-size: 50px;
+  width: 480px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.mai .phone{
+  height: 70px; 
+  font-size: 50px;
+  width: 480px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  
+}
+
+
+
+
+.mai .facebook {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 70px;
+  font-size: 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.mai .facebook img {
+  width: 50px;
+  padding-right: 27px;
+  padding-top: 7px;
+}
+
+
+.mai .facebook a {
+
+  color: black;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.mai .google {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 70px;
+  font-size: 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.mai .google a {
+
+  color: black;
+  font-size: 2em;
+  text-decoration: none;
+
+}
+.mai .google img {
+  width: 41px;
+  padding-right: 27px;
+  padding-top: 5px;
+}
+
+
+.name::placeholder {
+  font-size: 40px; /* 設置字體大小 */
+  margin-top: 5px; /* 設置頂部間距 */
+  padding-left: 5px;
+  color: #999; /* 設置字體顏色 */
+}
+
+.phone::placeholder {
+  font-size: 40px; /* 設置字體大小 */
+  margin-top: 5px; /* 設置頂部間距 */
+  padding-left: 5px;
+  color: #999; /* 設置字體顏色 */
+}
+
+
+
+
+
+.sendinformation{
+  width: 940px;
+height: 100px;
+display:flex;
+/* border: 1px solid #ffffff; */
+display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+
+.sendinformation .register {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 40px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sendinformation .register a {
+
+  color: black;
+  font-size: 2em;
+  text-decoration: none;
+}
+.sendinformation .login {
+
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sendinformation .login a {
+
+  color: black;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+
+
+.forget{
+
+  width: 290px;
+  float: right;
+  margin: 0 auto;
+ 
+}
+
+.forget a{
+
+color: #ffffff;
+font-size: 1em;
+text-decoration: none;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 下面是底層 */
+
+
+.bottom{
+
+  width: 1440px;
+
+  display: flex;
+  padding-top: 20px;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(28 26 26);
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+  
+ 
+}
+  
+
+.bottom p{
+
+  font-size: 20px;
+  
+ 
+
+}
+
+
+.bottom .left{
+  margin: auto 13px;
+  width: 400px;
+  line-height: 1.6;
+  color: white;
+  padding-left: 100px;
+  font-size: 8px;
+ 
+  
+
+
+}
+
+
+
+.bottom .min{
+  width: 300px;
+  color: white;
+  line-height: 1.6;
+  background-size:contain;
+  font-size: 8px;
+  margin-left: 50px;
+
+
+}
+
+
+.right{
+padding-top: 50px;
+padding-left: 300px;
+
+}
+
+.right img{
+  padding-left: 20px;
+  
+  }

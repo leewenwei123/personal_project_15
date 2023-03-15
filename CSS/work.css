@@ -1,0 +1,381 @@
+@import url('./reset.css');
+
+body {
+
+  background-color: black;
+  font-family: Candara, Arial, sans-serif;
+  padding-top: 30px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+body::before {
+
+  content: "";
+  background-image: url("../img/work/background.jpg");
+  position: fixed;
+  background-size: fixed;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  /* 設置透明度為 50% */
+}
+
+#header {
+
+  display: flex;
+  height: 150px;
+
+}
+
+.container {
+  width: 1440px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.container img {
+  /* float: left; */
+  padding: 10px 20px;
+  border-radius: 50%
+}
+
+nav {
+  float: right;
+  padding: 10px 60px;
+  width: 1000px;
+
+
+}
+
+.container ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.container nav li {
+  padding: 10px 20px;
+  float: left;
+  padding-top: 40px;
+}
+
+nav li:hover {
+  color: wheat;
+  font-weight: bold;
+
+
+  opacity: 0.5;
+}
+
+.container nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+
+.icon {
+  width: 100px;
+  padding-top: 40px;
+}
+
+
+
+
+/* 上面是導覽列 */
+
+
+
+
+
+.outerlayer {
+  padding-top: 200px;
+  display: flex;
+  width: 1440px;
+  flex-direction: column;
+  
+
+}
+
+
+
+
+.outerlayer .box1 {
+
+  height: 300px;
+  width: 1440px;
+  border: 1px solid rgb(68, 34, 34);
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+.outerlayer .box1 .right {}
+
+.outerlayer .box1 .right img {
+  width: 600px;
+  height: 300px;
+
+  overflow: hidden;
+
+
+}
+
+.outerlayer .box1 .lift {
+
+  margin: 0 auto;
+
+}
+
+.outerlayer .box1 p {
+
+  color: white;
+  font-size: 2em;
+  padding-left: 10px;
+  padding-top: 20px;
+  text-indent: 2em;
+  line-height: 1.2;
+
+}
+
+.outerlayer .box1 h2 {
+
+  color: rgb(228, 113, 19);
+  font-size: 2em;
+  padding-left: 10px;
+  padding-top: 20px;
+  line-height: .7;
+
+}
+
+.outerlayer img:hover {
+  transform: scale(1.75) translate(5px, 5px);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease;
+  
+}
+
+
+/* 上面是第一個BOX */
+
+.outerlayer .box2 {
+
+  height: 300px;
+  width: 1440px;
+  border: 1px solid rgb(68, 34, 34);
+  display: flex;
+ margin-top: 50px;
+
+}
+
+.outerlayer .box2 .right {}
+
+.outerlayer .box2 .right img {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  order: 1;
+
+
+}
+
+.outerlayer .box2 .lift {
+
+  margin: 0 auto;
+  order: 2;
+
+}
+
+.outerlayer .box2 p {
+
+  color: white;
+  font-size: 2em;
+  padding-left: 10px;
+  padding-top: 20px;
+  text-indent: 2em;
+  line-height: 1.2;
+
+}
+
+.outerlayer .box2 h2 {
+
+  color: rgb(228, 113, 19);
+  font-size: 2em;
+  padding-left: 10px;
+  padding-top: 20px;
+  line-height: .7;
+}
+/* 上面是box2 */
+
+
+.outerlayer .box3 {
+
+  height: 300px;
+  width: 1440px;
+  border: 1px solid rgb(68, 34, 34);
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 50px;
+
+}
+
+.outerlayer .box3 .right {}
+
+.outerlayer .box3 .right img {
+  width: 600px;
+  height: 300px;
+
+  overflow: hidden;
+
+
+}
+
+.outerlayer .box3 .lift {
+
+  margin: 0 auto;
+
+}
+
+.outerlayer .box3 p {
+
+  color: white;
+  font-size: 2em;
+  padding-left: 10px;
+  padding-top: 20px;
+  text-indent: 2em;
+  line-height: 1.2;
+
+}
+
+.outerlayer .box3 h2 {
+
+  color: rgb(228, 113, 19);
+  font-size: 2em;
+  padding-left: 10px;
+  padding-top: 20px;
+
+  line-height: .7;
+
+}
+
+/* 上面是box3 */
+
+.outerlayer .box4 {
+
+  height: 300px;
+  width: 1440px;
+  border: 1px solid rgb(68, 34, 34);
+  display: flex;
+ margin-top: 50px;
+ margin-bottom: 500px;
+
+}
+
+.outerlayer .box4 .right {}
+
+.outerlayer .box4 .right img {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  order: 1;
+
+
+}
+
+.outerlayer .box4 .lift {
+
+  margin: 0 auto;
+  order: 2;
+
+}
+
+.outerlayer .box4 p {
+
+  color: white;
+  font-size: 2em;
+  padding-left: 10px;
+  padding-top: 20px;
+  text-indent: 2em;
+  line-height: 1.2;
+
+}
+
+.outerlayer .box4 h2 {
+
+  color: rgb(228, 113, 19);
+  font-size: 2em;
+  padding-left: 10px;
+  padding-top: 20px;
+  line-height: .7;
+}
+
+/* 下面是底層 */
+
+
+.bottom{
+
+  width: 1440px;
+  display: flex;
+  padding-top: 20px;
+  position: relative;
+  background-color: rgb(28 26 26);
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  
+ 
+}
+  
+
+.bottom p{
+
+  font-size: 20px;
+  
+ 
+
+}
+
+
+.bottom .left{
+  margin: auto 13px;
+  width: 400px;
+  line-height: 1.6;
+  color: white;
+  padding-left: 100px;
+  font-size: 8px;
+ 
+  
+
+
+}
+
+
+
+.bottom .min{
+  width: 300px;
+  color: white;
+  line-height: 1.6;
+  background-size:contain;
+  font-size: 8px;
+  margin-left: 50px;
+
+
+}
+
+
+.bottom .right{
+padding-top: 50px;
+padding-left: 300px;
+
+}
+
+.bottom .right img{
+  padding-left: 20px;
+  
+  }
