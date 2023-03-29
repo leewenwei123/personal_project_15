@@ -1,154 +1,252 @@
-@import url('reset.css');
+@import url('./reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap');
+
+
+#loading {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+#loading-gif {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: blink 6s linear infinite;
+}
+
+@keyframes blink {
+  0%, 60%, 70% {
+    opacity: 1;
+  }
+40%,  100% {
+    opacity: 0;
+  }
+}
+
+
 
 body {
   background: rgb(175, 66, 66);
   background: radial-gradient(circle, rgb(138, 14, 14) 4%, rgb(34, 17, 14) 100%);
-  font-family: Candara, Arial, sans-serif;
-  padding-top: 30px;
-  width: 1440px;
+  font-family: 'Noto Sans JP', sans-serif;
+  /* 日文 */
+  font-family: 'Noto Serif SC', serif;
+  /* 中文 */
+  width: 100%;
   margin: 0 auto;
+
+}
+
+
+/* 上面是top */
+
+nav {
+  background: url(../img/index/background.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  height: 90px;
+  padding-top: 30px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  width: 180px;
+  padding-top: 40px;
+  justify-content: center;
   
 }
 
-#header {
-
-  display: flex;
-  height: 150px;
-
-}
-
-.container {
-  width: 1440px;
-  height: 40px;
-  margin: 0 auto;
-}
-
-.container img {
-  /* float: left; */
-  padding: 10px 20px;
-  border-radius: 50%
-}
-
-nav {
-  float: right;
-  padding: 10px 60px;
-  width: 1000px;
-
+nav img {
+  height: 90px;
+  margin-right: 10px;
 
 }
 
-.container ul {
-  margin: 0;
-  list-style-type: none;
+
+
+.shopping {
+  height: 50px;
+  width: 50px;
+  margin-top: -22px;
+  display: block;
 }
 
-.container nav li {
-  padding: 10px 20px;
-  float: left;
-  padding-top: 40px;
+
+nav ul .shoppingg {
+  background-image: url(../img/icon/Shopping\ 5.png);
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+
 }
 
-nav li:hover {
-  color: wheat;
-  font-weight: bold;
 
 
-  opacity: 0.5;
+.shoppingg:hover {
+  background-image: url(../img/icon/color_shopping.png);
+
 }
 
-.container nav a {
-  color: white;
+nav a {
+  color: #fff;
   text-decoration: none;
-  font-size: 26px;
+  margin: 0 10px;
+  font-size: 20px;
+  
+
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+nav a:last-child {
+  margin-right: 0;
 }
 
 
-.icon {
-  width: 100px;
-  padding-top: 40px;
+nav .member:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/member\ .png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center; 
+  background-size: contain;
+}
+
+nav .album:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/album.png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center; 
+  background-size: contain;
+}
+
+nav .author:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/author.png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center; 
+  background-size: contain;
+}
+
+nav .box:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/box\ .png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center; 
+  background-size: contain;
 }
 
 
+nav .information:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/information.png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center; 
+  background-size: contain;
+}
 
+nav .connection:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/connection.png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center; 
+  background-size: contain;
+}
 
 /* 上面是導覽列 */
 
+.film.text {
 
-.topimg {
-
-
-  background-position: 300px 3000px;
-}
-
-.topimg img {
-
-  width: 1440px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   margin: 0 auto;
-  display: block;
-  padding-bottom: 50px;
-  display: block;
-
-
-
+  border: 1px solid #05434b;
+  font-family: 'Gajraj One', cursive;
+  font-family: 'Noto Sans JP', sans-serif;
 
 }
 
 
+/* 上面是文字 */
 
-/* 上面是大圖片 */
 
-
-.word{
-padding-bottom: 200px;
-
+.top .text {
+  color: #cfc7c7;
+  width: 650px;
+  /* border: 1px solid #fff; */
+  line-height: 1.6;
+  font-size: 30px;
+  text-align: justify;
 }
 
 
-.midvideo {
 
 
-  width: 1440px;
-  /* height: 902px; */
+
+
+
+.top {
+
+  /* border: 1px solid #fff; */
+  width: 100%;
+  height: 600px;
   margin: 0 auto;
-  /* padding-bottom: 50px; */
   background-image: url("../img/index/Blood_Eucalyptus.png");
   background-position: top left, bottom right;
   background-repeat: no-repeat, repeat-x;
-  background-size: 98%, 100%;
+  background-size: 100%, 100%;
   position: relative;
-
-
-}
-
-video {
-
-  width: 800px;
-  height: 537px;
-  margin: 87px 267px;
-  padding-bottom: 250px;
-}
-
-
-
-
-#image1 {
-  position: absolute;
-  top: 120px;
-  left: 50px;
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
 
 }
 
-#image2 {
-  position: absolute;
-  top: 470px;
-  left: 1500px;
-}
+
+
 
 #image3 {
   position: absolute;
-  top: 559px;
-  left: 1113px;
+  top: 350px;
+  right: 10px;
   opacity: 0.5;
   width: 300px;
 }
@@ -156,45 +254,51 @@ video {
 
 #image4 {
   position: absolute;
-  top: 763px;
+  top: 350px;
   left: 13px;
   height: 400px;
 }
 
 #image5 {
- 
+
   position: absolute;
-  top: 879px;
+  top: 470px;
   left: 103px;
   height: 50px;
   animation: spin 4s linear infinite;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
-#image6  {
+#image6 {
 
   position: absolute;
-  top: 10px;
-  left: 1100px;
-  height: 500px;
+  top: 34px;
+  left: 0px;
+  height: 250px;
   animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-
 }
 
 @keyframes float {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-50px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -203,18 +307,18 @@ video {
 
 
 
-#image7  {
+#image7 {
   position: absolute;
-  top: 600px;
+  top: 470px;
   left: 3px;
-  height: 600px;
-  width: 1400px;
+  height: 400px;
+  width: 1100px;
   animation-name: cloud;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   opacity: .9;
 
- 
+
 
 }
 
@@ -222,198 +326,287 @@ video {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateX(-50px);
   }
+
   50% {
     transform: translateX(120px);
   }
+
   175% {
     transform: translateY(200px);
   }
+
   100% {
     transform: translateY(0px);
   }
 }
 
+/* 上面是最上層*/
 
 
-
-
-/* 上面是影片 */
-
-
-
-.books {
-
-
-  width: 1440px;
-  padding-bottom: 50px;
-  color: antiquewhite;
-
-
-}
-
-.books a {
-  color: white;
-  text-decoration: none;
-  font-size: 30px;
-
-
-
-}
-
-.books ul {
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: -5px;
-
-}
-
-.books li {
-  display: flex;
-  align-items: end;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-}
-
-.books img {
-
-  box-shadow: 1px 1px 10px 3px;
-  margin-bottom: 20px;
-}
-
-.books img:hover {
-  box-shadow: 1px 1px 10px 10px;
-
-}
-
-
-
-
-
-/* 這邊是雲 */
-
-/* 上面是書籍展示 */
-
-
-.role {
-
-  width: 800px;
-  padding-bottom: 400px;
-  padding-left: 100px;
-}
-
-
-
-.text {
-display: flex;
-
-justify-content: center;
-
-}
-
-
-
-
-
-.role ul {
-
-  display: flex;
-  justify-content: space-between;
-  
-}
-
-.role li {
-  position: relative;
-  margin-right: 500px;
-
-}
-
-.role img {
-  position: absolute;
-  box-shadow: 1px 1px 10px 3px;
-  height: 300px;
-  width: 300px;
-  border-radius: 40%;
-
-}
-
-.role .aa {
-  display: block;
-}
-
-.role .aaa:hover {
-  display: none;
-}
-
-.role .bb {
-  display: block;
-}
-
-.role .bbb:hover {
-  display: none;
-}
-
-.role .cc {
-  display: block;
-}
-
-.role .ccc:hover {
-  display: none;
-}
-
-
-
-.role p {
-
-  padding-top: 50px;
-
-}
-
-
-/* 上面是人物圖片 */
-
-
-.narrative {
-  display: flex;
-  width: 1440px;
+.mid {
+  width: 100%;
+  height: 580px;
   margin: 0 auto;
-  justify-content: space-between;
-  align-items:flex-start;
-  padding-bottom: 200px;
+  background-image: url("../img/index/Blood_Eucalyptus.png");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 100%, 100%;
+  position: relative;
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   overflow: hidden;
-  text-indent: 4em;
+  /* 隱藏圖片溢出的部分 */
+
+}
+
+.mid::before {
+  content: counter(name);
+  background-image: url("../img/index/tree.png");
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#snails {
+  position: absolute;
+  /* 設置該元素為絕對定位 */
+  /* right: -150; */
+  animation-name: move;
+  /* 設置動畫名稱 */
+  animation: move 10s linear infinite;
+  animation-timing-function: ease-out;
+  /* 設置動畫速度曲線為ease-out，即緩慢加速 */
+
 }
 
 
-.narrative .narr {
+.mid img {
 
-  flex: 1;
+  display: block;
+  right: 10px;
+
+}
+
+
+@keyframes move {
+
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    transform: translateX(-40%) translateY(-5%);
+  }
+
+}
+
+
+/* 上面是蝸牛慢慢爬的設定 */
+
+
+
+.wooden {
+  width: 100%;
+  height: 610px;
+  margin: 0 auto;
+  background-image:url('../img/index/double_one_background/double_one_background.jpg');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 100%, 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden; 
+  animation-name: bg-carousel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bg-carousel {
+  0% {background-image: url("../img/index/double_one_background/double_one_background.jpg");}
+  25% {background-image: url("../img/index/double_one_background/double_one_background2.jpg");}
+  50% {background-image: url("../img/index/double_one_background/double_one_background3.jpg");}
+  75% {background-image: url("../img/index/double_one_background/double_one_background.jpg");}
+  100% {background-image: url("../img/index/double_one_background/double_one_background2.jpg");}
+}
+
+
+
+
+.wooden img {
+  width: 100px;
+  height: 160px;
+  margin: 0 40px; /* 調整圖片之間的間距 */
+  max-width: 100%; /* 圖片寬度最大為容器的寬度 */
+  transition: transform 0.3s ease-in-out; /* 添加動畫效果 */
+   justify-content: center;
+  
+   
+
+}
+
+.wooden img:hover {
+  transform: scale(1.4);
+  box-shadow: 2px 2px 4px 0px rgba(243, 227, 227, 0.9); 
+
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-description {
+  position: absolute;
+  bottom: -20px; /* adjust as needed */
+  left: 0;
+  width: 100%;
   text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-
-.narrative p {
-
-  width: 400px;
-  font-size: 30px;
-  color: aliceblue;
-
+.image-container:hover .image-description {
+  opacity: 1;
+}
+.image-text {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
   line-height: 1.6;
-  padding: 0px 50px;
+  display: none;
+}
+
+.float{
+  position:relative;
+
 
 }
 
+#image8 {
+
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  height: 300px;
+  animation-name: float2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#image9 {
+
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  height: 300px;
+  filter:drop-shadow(3px 3px 3px rgb(0, 0, 0));
+}
+
+#image10 {
+
+  position: absolute;
+    top: 386px;
+    right: 5px;
+    height: 200px;
+    opacity: 0.3;
+}
+
+/* 上面是人物介紹 */
 
 
+.faq{
+padding-top: 40px;
+}
 
+.faq h2{
+color: #fff;
+}
 
+.faq p{
 
+  background: linear-gradient(to right, white, #981616);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 2px 2px 4px 0px rgba(243, 227, 227, 0.9); 
+  height: 40px;
+  text-align:left;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+
+}
+
+.boxs{
+
+width: 100%;
+height: 400px;
+margin: 0 auto;
+background-image: url("../img/index/Blood_Eucalyptus.png");
+background-position: top left, bottom right;
+background-repeat: no-repeat, repeat-x;
+background-size: 100%, 100%;
+position: relative;
+padding-top: 50px;
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+}
+
+.mp4{
+
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.mp4 img{
+
+width: 280px;
+height: 230px;
+
+}
 
 
 
@@ -422,66 +615,55 @@ justify-content: center;
 
 /* 下面是底層 */
 
-
-.bottom{
-
-  width: 1440px;
-
-  display: flex;
-  padding-top: 20px;
+.bottom {
+   display: flex;
+  padding-top: 5px;
   position: relative;
   bottom: 0;
-  background-color: rgb(28 26 26);
+  color: #ffffff;
   background-size: auto 200px;
-  background-repeat: no-repeat;
-  
+  line-height: 1.4;
+  padding: 10px 10px;
+  justify-content: flex-end;
+  font-size: 10px;
+  background-image: url(../img/bottom_img.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-size: 20%;
+
+}
+
+
+
+
+
+.bottom .left, .center, .right {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom .left {
+
+
+}
+
+.bottom .center {
  
+  text-align: center;
+  line-height: 50px;
 }
-  
 
-.bottom p{
-
-  font-size: 20px;
-  
+.bottom .right {
  
-
+  align-self: center;
+  vertical-align: middle;
+  text-align:right;
+  padding-left: 5px;
 }
 
+.bottom img{
 
-.bottom .left{
-  margin: auto 13px;
-  width: 400px;
-  line-height: 1.6;
-  color: white;
-  padding-left: 100px;
-  font-size: 8px;
- 
-  
-
+height: 25px;
+margin-left: 5px;
 
 }
-
-
-
-.bottom .min{
-  width: 300px;
-  color: white;
-  line-height: 1.6;
-  background-size:contain;
-  font-size: 8px;
-  margin-left: 50px;
-
-
-}
-
-
-.right{
-padding-top: 50px;
-padding-left: 300px;
-
-}
-
-.right img{
-  padding-left: 20px;
-  
-  }

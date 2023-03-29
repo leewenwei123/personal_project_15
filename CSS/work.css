@@ -1,12 +1,18 @@
 @import url('./reset.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap');
+
+
 body {
 
   background-color: black;
-  font-family: Candara, Arial, sans-serif;
-  padding-top: 30px;
-  width: 1440px;
+  font-family: 'Noto Sans JP', sans-serif;
+  /* 日文 */
+  font-family: 'Noto Serif SC', serif;
+  /* 中文 */
+  width: 100%;
   margin: 0 auto;
+
 }
 
 body::before {
@@ -18,7 +24,7 @@ body::before {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: 10%;
+  background-size: 15%;
   top: 0;
   left: 0;
   width: 100%;
@@ -28,354 +34,497 @@ body::before {
   /* 設置透明度為 50% */
 }
 
-#header {
-
-  display: flex;
-  height: 150px;
-
-}
-
-.container {
-  width: 1440px;
-  height: 40px;
-  margin: 0 auto;
-}
-
-.container img {
-  /* float: left; */
-  padding: 10px 20px;
-  border-radius: 50%
-}
-
 nav {
-  float: right;
-  padding: 10px 60px;
-  width: 1000px;
-
-
-}
-
-.container ul {
+  background: url(../img/index/background.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
   margin: 0;
-  list-style-type: none;
+  padding: 0;
+  padding: 10px;
+  height: 90px;
+  padding-top: 30px;
 }
 
-.container nav li {
-  padding: 10px 20px;
-  float: left;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  width: 180px;
   padding-top: 40px;
+  justify-content: center;
+
 }
 
-nav li:hover {
-  color: wheat;
-  font-weight: bold;
+nav img {
+  height: 90px;
+  margin-right: 10px;
 
-
-  opacity: 0.5;
 }
 
-.container nav a {
-  color: white;
+
+
+.shopping {
+  height: 50px;
+  width: 50px;
+  margin-top: -22px;
+  display: block;
+}
+
+
+nav ul .shoppingg {
+  background-image: url(../img/icon/Shopping\ 5.png);
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+
+}
+
+
+
+.shoppingg:hover {
+  background-image: url(../img/icon/color_shopping.png);
+
+}
+
+nav a {
+  color: #fff;
   text-decoration: none;
-  font-size: 26px;
+  margin: 0 10px;
+  font-size: 20px;
+
+
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+nav a:last-child {
+  margin-right: 0;
 }
 
 
-.icon {
-  width: 100px;
-  padding-top: 40px;
+nav .member:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/member\ .png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center;
+  background-size: contain;
 }
 
+nav .album:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/album.png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center;
+  background-size: contain;
+}
 
+nav .author:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/author.png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center;
+  background-size: contain;
+}
 
+nav .box:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/box\ .png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center;
+  background-size: contain;
+}
+
+nav .information:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/information.png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center;
+  background-size: contain;
+}
+
+nav .connection:hover {
+  background-size: cover;
+  color: transparent;
+  background-image: url("../img/nav/connection.png");
+  background-color: #fff;
+  border-radius: 10%;
+  background-position: center center;
+  background-size: contain;
+}
 
 /* 上面是導覽列 */
 
+.slideshow-container {
 
-
-
-
-.outerlayer {
-  padding-top: 200px;
   display: flex;
-  width: 1440px;
-  flex-direction: column;
-  
-
+  width: 100%;
+  background-image: url(../img/work/black.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 50px;
 }
 
 
 
 
-.outerlayer .box1 {
+.slideshow-container .image-container {
 
-  height: 300px;
-  width: 1440px;
-  border: 1px solid rgb(68, 34, 34);
-  display: flex;
-  flex-direction: row-reverse;
-
-}
-
-.outerlayer .box1 .right {}
-
-.outerlayer .box1 .right img {
+  height: 500px;
   width: 600px;
-  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
   overflow: hidden;
+}
 
+.image-container img {
+  height: 455px;
+  animation: slide-in 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* 當捲動到該區塊時才執行動畫 */
+.image-container:not(.played) img {
+  animation-delay: var(--animation-delay, 0s);
+}
+
+/* 設定每張圖片的進場延遲時間 */
+.image-container:not(.played) img:nth-of-type(1) {
+  --animation-delay: 0s;
+}
+
+.image-container:not(.played) img:nth-of-type(2) {
+  --animation-delay: 1s;
+}
+
+.image-container:not(.played) img:nth-of-type(3) {
+  --animation-delay: 2s;
+}
+
+.image-container:not(.played) img:nth-of-type(4) {
+  --animation-delay: 3s;
+}
+
+.image-container:not(.played) img:nth-of-type(5) {
+  --animation-delay: 4s;
+}
+
+.image-container:not(.played) img:nth-of-type(6) {
+  --animation-delay: 5s;
+}
+
+/* 上面是圖片的滑入 */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
 
 }
 
-.outerlayer .box1 .lift {
 
+
+.logo {
+  width: 200px;
+
+}
+
+.logo img {
+
+  width: 400px;
+
+}
+
+.text {
+
+  color: #ffffff;
+  line-height: 1.6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+.videointroduction {
+
+  width: 1200px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.netflix {
   margin: 0 auto;
 
 }
 
-.outerlayer .box1 p {
-
-  color: white;
-  font-size: 2em;
-  padding-left: 10px;
-  padding-top: 20px;
-  text-indent: 2em;
-  line-height: 1.2;
+.videointroduction img {
+  width: 80%;
+  height: 200px;
+  box-shadow: 0 0 10px rgb(254, 254, 254);
 
 }
 
-.outerlayer .box1 h2 {
-
-  color: rgb(228, 113, 19);
-  font-size: 2em;
-  padding-left: 10px;
-  padding-top: 20px;
-  line-height: .7;
-
-}
-
-.outerlayer img:hover {
-  transform: scale(1.75) translate(5px, 5px);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  transition: all 0.3s ease;
-  
+.videointroduction p {
+  color: #a9a8a8;
+  height: 50px;
+  padding: 0 50px;
+  text-align: left;
+  padding-bottom: 10px;
+  line-height: 1.6;
 }
 
 
-/* 上面是第一個BOX */
+.videointroduction h2 {
+  color: #ffffff;
+  height: 30px;
+  padding-top: 15px;
 
-.outerlayer .box2 {
+}
 
-  height: 300px;
-  width: 1440px;
-  border: 1px solid rgb(68, 34, 34);
+
+
+
+.netflix td {
+  text-align: center;
+  height: 350px;
+}
+
+#album_img {
+
+  transition: all 0.2s ease-in-out;
+  /* 添加過渡效果 */
+}
+
+#album_img:hover {
+  transform: scale(1.1);
+  /* 縮放圖片 */
+  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+  /* 添加紅色漸層陰影 */
+}
+
+/* 上面是第二季影集介紹 */
+
+.mid {
+
+  width: 1200px;
+  height: 600px;
   display: flex;
- margin-top: 50px;
-
-}
-
-.outerlayer .box2 .right {}
-
-.outerlayer .box2 .right img {
-  width: 600px;
-  height: 300px;
-  overflow: hidden;
-  order: 1;
-
-
-}
-
-.outerlayer .box2 .lift {
-
   margin: 0 auto;
-  order: 2;
+  background-image: url(../img/work/wall.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 200px;
 
 }
 
-.outerlayer .box2 p {
-
-  color: white;
-  font-size: 2em;
-  padding-left: 10px;
-  padding-top: 20px;
-  text-indent: 2em;
-  line-height: 1.2;
-
-}
-
-.outerlayer .box2 h2 {
-
-  color: rgb(228, 113, 19);
-  font-size: 2em;
-  padding-left: 10px;
-  padding-top: 20px;
-  line-height: .7;
-}
-/* 上面是box2 */
-
-
-.outerlayer .box3 {
-
-  height: 300px;
-  width: 1440px;
-  border: 1px solid rgb(68, 34, 34);
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  padding-bottom: 50px;
   display: flex;
-  flex-direction: row-reverse;
-  margin-top: 50px;
-
 }
 
-.outerlayer .box3 .right {}
-
-.outerlayer .box3 .right img {
-  width: 600px;
-  height: 300px;
-
-  overflow: hidden;
-
-
-}
-
-.outerlayer .box3 .lift {
-
-  margin: 0 auto;
-
-}
-
-.outerlayer .box3 p {
-
-  color: white;
-  font-size: 2em;
-  padding-left: 10px;
-  padding-top: 20px;
-  text-indent: 2em;
-  line-height: 1.2;
-
-}
-
-.outerlayer .box3 h2 {
-
-  color: rgb(228, 113, 19);
-  font-size: 2em;
-  padding-left: 10px;
-  padding-top: 20px;
-
-  line-height: .7;
-
-}
-
-/* 上面是box3 */
-
-.outerlayer .box4 {
-
-  height: 300px;
-  width: 1440px;
-  border: 1px solid rgb(68, 34, 34);
+.slide {
+  display: none;
+  width: 100%;
+  text-align: center;
   display: flex;
- margin-top: 50px;
- margin-bottom: 500px;
-
-}
-
-.outerlayer .box4 .right {}
-
-.outerlayer .box4 .right img {
-  width: 600px;
-  height: 300px;
-  overflow: hidden;
-  order: 1;
 
 
 }
 
-.outerlayer .box4 .lift {
-
-  margin: 0 auto;
-  order: 2;
+.slide img {
+  width: 40%;
+  height: 250px;
+  padding-top: 150px;
 
 }
 
-.outerlayer .box4 p {
-
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: white;
-  font-size: 2em;
-  padding-left: 10px;
-  padding-top: 20px;
-  text-indent: 2em;
-  line-height: 1.2;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
 
 }
 
-.outerlayer .box4 h2 {
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 
-  color: rgb(228, 113, 19);
-  font-size: 2em;
-  padding-left: 10px;
-  padding-top: 20px;
-  line-height: .7;
 }
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active,
+.dot:hover {
+  background-color: rgba(235, 0, 0, 0.8);
+}
+
+/* 上面是輪撥 */
+
+
+.yt {
+  margin: 0 auto;
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #ffffff; */
+  padding-bottom: 50px;
+
+
+}
+
+
+.ytr{
+color: #ffffff;
+line-height: 1.6;
+margin: 10px;
+padding-top: 5px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+
+
+
+
+
+
+
 
 /* 下面是底層 */
 
-
-.bottom{
-
-  width: 1440px;
+.bottom {
   display: flex;
-  padding-top: 20px;
+  padding-top: 5px;
   position: relative;
-  background-color: rgb(28 26 26);
+  bottom: 0;
+  color: #ffffff;
   background-size: auto 200px;
-  background-repeat: no-repeat;
-  
- 
-}
-  
-
-.bottom p{
-
-  font-size: 20px;
-  
- 
-
-}
-
-
-.bottom .left{
-  margin: auto 13px;
-  width: 400px;
-  line-height: 1.6;
-  color: white;
-  padding-left: 100px;
-  font-size: 8px;
- 
-  
-
+  line-height: 1.4;
+  padding: 10px 10px;
+  justify-content: flex-end;
+  font-size: 10px;
+  background-image: url(../img/bottom_img.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-size: 20%;
 
 }
 
 
 
-.bottom .min{
-  width: 300px;
-  color: white;
-  line-height: 1.6;
-  background-size:contain;
-  font-size: 8px;
-  margin-left: 50px;
 
 
+.bottom .left,
+.center,
+.right {
+  width: 100%;
+  height: 100%;
 }
 
+.bottom .left {}
 
-.bottom .right{
-padding-top: 50px;
-padding-left: 300px;
+.bottom .center {
 
+  text-align: center;
+  line-height: 50px;
 }
 
-.bottom .right img{
-  padding-left: 20px;
-  
-  }
+.bottom .right {
+
+  align-self: center;
+  vertical-align: middle;
+  text-align: right;
+  padding-left: 5px;
+}
+
+.bottom img {
+
+  height: 25px;
+  margin-left: 5px;
+
+}
