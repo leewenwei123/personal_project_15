@@ -211,7 +211,7 @@ padding-top: 30px;
 
 .connect .abc{
 
-  color: #ffffff;
+  color: #000000;
   font-size: 10px;
   width: 170px;
   padding-top: 5px;
@@ -276,24 +276,42 @@ padding-top: 30px;
   line-height: 30px;
   margin-right: 10px;
 }
+
+
+
+
+.box_1:hover, .box_1:focus {
+ transform: scale(1.1);
+}
+
+.box_2:hover, .box_2:focus {
+ transform: scale(1.1);
+}
+
 .container {
   width: 170px;
   display: flex;
   justify-content: space-between;
 }
-
-.box_3 ,.box_4{
-  width: 70px;
-  height: 40px;
-  /* border: 5px solid #ffffff; */
-  border-radius: 10px;
-  background-color: #000000;
-  color:#ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight:800;
+button {
+  display: inline-block;
+  background-color: #050505; /* 背景顏色 */
+  border: none; /* 去掉邊框 */
+  color: white; /* 字體顏色 */
+  text-align: center; /* 文字居中 */
+  text-decoration: none; /* 去掉下劃線 */
+  font-size: 16px; /* 字體大小 */
+  cursor: pointer; /* 鼠標樣式 */
+  border-radius: 4px; /* 圓角 */
+  transition: all 0.3s; /* 過渡效果 */
+  outline: none; /* 去掉點擊後的外框 */
+  padding: 10px 20px; /* 內邊距 */
 }
+
+button:hover {
+  transform: scale(1.1); /* 放大效果 */
+}
+
 
 
 
