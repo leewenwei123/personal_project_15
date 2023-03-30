@@ -186,14 +186,13 @@ margin-bottom: 100px;
 display: flex;
 flex-direction:column;
 align-items: center;
-padding-top: 20px;
 background-color: #ffffff;
-background-image: url(../img/Member_login/bbb.gif);
-background-position: right bottom; 
-background-size: 35%;
+background-image: url(../img/Member_login/ccc.png);
+background-size: cover;
 background-repeat: no-repeat;
+margin-top: 60px;
+padding-top: 30px;
 }
-
 
 
 
@@ -212,9 +211,10 @@ background-repeat: no-repeat;
 
 .connect .abc{
 
-  color: #000000;
+  color: #ffffff;
   font-size: 10px;
   width: 170px;
+  padding-top: 5px;
 }
 
 
@@ -225,7 +225,7 @@ background-repeat: no-repeat;
   align-items: center;
   width: 170px;
   height: 40px;
-  border: 4px solid #000000;
+  border: 2px solid #000000;
   color: #040404;
   background-color: rgb(140, 157, 194);
   border-radius: 10px;
@@ -254,7 +254,7 @@ background-repeat: no-repeat;
   align-items: center;
   width: 170px;
   height: 40px;
-  border: 4px solid #000000;
+  border: 2px solid #000000;
   color: #040404;
   background-color: rgb(171, 208, 224,1);
   border-radius: 10px;
@@ -285,7 +285,7 @@ background-repeat: no-repeat;
 .box_3 ,.box_4{
   width: 70px;
   height: 40px;
-  border: 5px solid #ffffff;
+  /* border: 5px solid #ffffff; */
   border-radius: 10px;
   background-color: #000000;
   color:#ffffff;

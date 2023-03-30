@@ -369,6 +369,7 @@ nav .connection:hover {
   content: counter(name);
   background-image: url("../img/index/tree.png");
   background-repeat: no-repeat;
+  background-position: right center;
   opacity: 0.9;
   position: absolute;
   top: 0;
@@ -405,7 +406,7 @@ nav .connection:hover {
   }
 
   100% {
-    transform: translateX(-40%) translateY(-5%);
+    transform: translateX(-30%) translateY(-10%);
   }
 
 }
