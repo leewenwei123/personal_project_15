@@ -465,7 +465,273 @@ h2>p {
 width: 130px;
 
 }
+/* 上面是影片的往上撥放 */
 
+.booook{
+  display: flex;
+  justify-content: center; /*水平置中*/
+  align-items: center; /*垂直置中*/
+ box-sizing: border-box;
+ padding-bottom: 100px;
+ 
+}
+
+
+
+
+.flipbook{
+background-image: url(../img/author/book/background.png);
+
+/* margin:  0 auto; */
+margin-left: 0;
+display: flex;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+line-height: 1.6;
+color: rgb(255, 255, 255);
+font-weight: bold;
+text-shadow: 2px 2px 0 rgb(0, 0, 0);
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+font-size: 1em;
+
+}
+
+.flipbook p{
+ width: 90%;
+ text-indent: 2em;
+}
+
+
+
+
+ .book_1{
+  background-image: url(../img/author/book/background.png);
+margin:  0 auto;
+width: 800px;
+height: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+line-height: 1.6;
+color: rgb(255, 255, 255);
+font-weight: bold;
+text-shadow: 2px 2px 0 rgb(0, 0, 0);
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+padding: 10px;
+}
+
+.book_1 img{
+
+width: 80%;
+margin: 0 auto;
+padding-top: 50px;
+
+
+}
+
+.book_1_t{
+flex: 0;
+ 
+}
+
+.book_1_b{
+  flex: 1;
+  text-align: center;
+   
+  }
+
+
+
+
+/* 這邊是第一頁 */
+
+.book_2{
+  background-image: url(../img/author/book/background.png);
+margin:  0 auto;
+width: 800px;
+height: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+line-height: 1.6;
+color: rgb(255, 255, 255);
+font-weight: bold;
+text-shadow: 2px 2px 0 rgb(0, 0, 0);
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+padding: 10px;
+}
+
+.book_2 img{
+
+width: 50%;
+margin: 0 auto;
+padding-top: 20px;
+
+
+}
+
+.book_2_t{
+flex: 0;
+ 
+}
+
+.book_2_b{
+  flex: 1;
+  text-align: center;
+   
+  }
+
+/* 這邊是第二頁 */
+
+.book_3{
+  background-image: url(../img/author/book/background.png);
+margin:  0 auto;
+width: 800px;
+height: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+line-height: 1.6;
+color: rgb(255, 255, 255);
+font-weight: bold;
+text-shadow: 2px 2px 0 rgb(0, 0, 0);
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+padding: 10px;
+}
+
+.book_3 img{
+
+width: 60%;
+margin: 0 auto;
+padding-top: 20px;
+
+}
+
+.book_3_t{
+flex: 0;
+ 
+}
+
+.book_3_b{
+  flex: 1;
+  text-align: center;
+   
+  }
+
+/* 這邊是第三頁 */
+.book_4{
+  background-image: url(../img/author/book/background.png);
+margin:  0 auto;
+width: 800px;
+height: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+line-height: 1.6;
+color: rgb(255, 255, 255);
+font-weight: bold;
+text-shadow: 2px 2px 0 rgb(0, 0, 0);
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+padding: 10px;
+}
+
+.book_4 img{
+
+width: 40%;
+margin: 0 auto;
+padding-top: 10px;
+
+}
+
+.book_4_t{
+flex: 0;
+ 
+}
+
+.book_4_b{
+  flex: 1;
+  text-align: center;
+   
+  }
+
+/* 這邊是第四頁 */
+
+.book_5{
+  background-image: url(../img/author/book/background.png);
+margin:  0 auto;
+width: 800px;
+height: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+line-height: 1.6;
+color: rgb(255, 255, 255);
+font-weight: bold;
+text-shadow: 2px 2px 0 rgb(0, 0, 0);
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+padding: 10px;
+}
+
+.book_5 img{
+
+width: 60%;
+margin: 0 right;
+padding-top: 30px;
+
+}
+
+.book_5_t{
+flex: 0;
+ 
+}
+
+.book_5_b{
+  flex: 1;
+  text-align: center;
+   
+  }
+
+/* 這邊是第五頁 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 上面是翻書的地方 */
 
 /* 下面是底層 */
 
