@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap');
+@media screen and (max-width: 414px) {
+  
+
+  
+  
+  body {
+    background: rgb(175, 66, 66);
+    background: radial-gradient(circle, rgb(138, 14, 14) 4%, rgb(34, 17, 14) 100%);
+    font-family: 'Noto Sans JP', sans-serif;
+    /* 日文 */
+    font-family: 'Noto Serif SC', serif;
+    /* 中文 */
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  body::before {
+
+    content: "";
+    background-image: url("../img/work/background.jpg");
+    position: fixed;
+    background-size: fixed;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 15%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    /* 設置透明度為 50% */
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 410px;
+    margin: 0 auto;
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+   font-size: 6px;
+ 
+  }
+  .top img{
+    height: 100%;
+ 
+  }
+  
+
+  .videointroduction {
+
+    width: 410px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+tr{
+
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+
+}
+
+
+
+.videointroduction img {
+  box-shadow: 0 0 10px rgb(254, 254, 254);
+  width: 250px;
+}
+
+
+.mid {
+
+  width: 410px;
+  height: 300px;
+  display: flex;
+  margin: 0 auto;
+  background-image: url(../img/work/wall.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 200px;
+
+}
+
+.slide img {
+ height: 100px;
+  padding-top: 100px;
+
+}
+
+
+
+.yt {
+  margin: 0 auto;
+  width: 410px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* border: 1px solid #ffffff; */
+  padding-bottom: 50px;
+
+}
+
+.ytr{
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 10px;
+  padding-top: 5px;
+  order: 1;
+  padding-bottom: 10px;
+  line-height: 1.6;
+  }
+
+
+.ytl{
+  order: 2;
+  padding-bottom: 250px;
+  padding-left: 50px;
+}
+
+.my-video {
+  width: 80%; /* 设置宽度为父元素宽度的50% */
+}
+
+
+
+.bottom .pp{
+  font-size: 8px;
+     line-height: 1.6;
+  }
+  
+  
+/*   
+      .bottom .left, .center, .right {
+    width: 34%;
+   
+  
+  } */
+  
+      .bottom {
+        display: flex;
+       padding-top: 5px;
+       position: fixed;
+       bottom: 0;
+       color: #ffffff;
+       background-size: auto 100px;
+  
+       padding: 10px 10px;
+       justify-content: flex-end;
+       background-image: url(../img/bottom_img.jpg);
+       background-size: cover;
+       background-position: center center;
+    
+     
+     }
+     
+  .bottom .right {
+   
+    align-self: center;
+    vertical-align: middle;
+    text-align:right;
+    padding-left: 15px;
+    padding-right: 5px;
+    width: 25%;
+   
+  }
+  
+  .bottom .left {
+   
+  width: 40%;
+   
+  }
+  
+  .bottom img{
+  
+  height: 20px;
+  margin-left: 5px;
+  
+  }
+  
+  .bottom .center {
+   
+    text-align: center;
+    line-height: 20px;
+    margin-left: 10px;
+   width: 35%;
+  }
+  }

@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap');
+@media screen and (max-width: 414px) {
+  
+
+  
+  
+  body {
+    background: rgb(175, 66, 66);
+    background: radial-gradient(circle, rgb(138, 14, 14) 4%, rgb(34, 17, 14) 100%);
+    font-family: 'Noto Sans JP', sans-serif;
+    /* 日文 */
+    font-family: 'Noto Serif SC', serif;
+    /* 中文 */
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  #loading {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+  }
+  
+  #loading-gif {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink 6s linear infinite;
+    display: none;
+  }
+  .top .text {
+    color: #cfc7c7;
+    width: 650px;
+    /* border: 1px solid #fff; */
+    line-height: 1.6;
+    font-size: 30px;
+    text-align: justify;
+
+  }
+  #image3 {
+    position: absolute;
+    top: 350px;
+    right: 10px;
+    opacity: 0.5;
+    width: 300px;
+    display: none;
+  }
+  
+  
+  #image4 {
+    position: absolute;
+    top: 350px;
+    left: 13px;
+    height: 400px;
+    display: none;
+  }
+  
+  #image5 {
+  
+    position: absolute;
+    top: 470px;
+    left: 103px;
+    height: 50px;
+    animation: spin 4s linear infinite;
+    display: none;
+  }
+  #image6 {
+
+    position: absolute;
+    top: 34px;
+    left: 0px;
+    height: 250px;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: none;
+  }
+
+  #image7 {
+    position: absolute;
+    top: 470px;
+    left: 3px;
+    height: 400px;
+    width: 1100px;
+    animation-name: cloud;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    opacity: .9;
+    display: none;
+  }  
+  #snails {
+    position: absolute;
+    /* 設置該元素為絕對定位 */
+    /* right: -150; */
+    animation-name: move;
+    /* 設置動畫名稱 */
+    animation: move 10s linear infinite;
+    animation-timing-function: ease-out;
+    /* 設置動畫速度曲線為ease-out，即緩慢加速 */
+ display: none;
+  
+  }
+  
+  .mid::before {
+    content: counter(name);
+    background-image: url("../img/index/tree.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  #image9 {
+
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    height: 300px;
+    filter:drop-shadow(3px 3px 3px rgb(0, 0, 0));
+    display: none;
+  }
+  
+  #image8 {
+
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    height: 100px;
+    animation-name: float2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+.wooden {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  background-image:url('../img/index/double_one_background/double_one_background.jpg');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 50%, 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden; 
+  animation-name: bg-carousel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+}
+.wooden img {
+  width: 50px;
+  height: 100px;
+  margin: 0 20px; /* 調整圖片之間的間距 */
+  max-width: 100%; /* 圖片寬度最大為容器的寬度 */
+  transition: transform 0.3s ease-in-out; /* 添加動畫效果 */
+   justify-content: center;
+  
+}
+
+
+.mp4 img{
+
+  width: 100px;
+  height: 100px;
+ margin-bottom: 20px;
+ margin-right: 50px;
+  
+  }
+
+
+   .faq td{
+width: 150px;
+
+  }
+  
+  .faq h2{
+margin-left: 30px;
+
+  }
+  .faq p{
+
+    background: linear-gradient(to right, white, #981616);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 2px 2px 4px 0px rgba(243, 227, 227, 0.9); 
+    height: 20px;
+    text-align:left;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    margin-left: 30px;
+  
+  }
+  .boxs{
+
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url("../img/index/Blood_Eucalyptus.png");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, repeat-x;
+    background-size: 30%, 30%;
+    position: relative;
+    padding-top: 5px;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    
+  
+    }
+
+
+.bottom .pp{
+font-size: 8px;
+   line-height: 1.6;
+}
+
+
+
+    .bottom .left, .center, .right {
+  width: 34%;
+ 
+
+}
+
+    .bottom {
+      display: flex;
+     padding-top: 5px;
+     position: relative;
+     bottom: 0;
+     color: #ffffff;
+     background-size: auto 100px;
+  
+     padding: 10px 10px;
+     justify-content: flex-end;
+     background-image: url(../img/bottom_img.jpg);
+     background-size: cover;
+     background-position: center center;
+  
+   
+   }
+   
+.bottom .right {
+ 
+  align-self: center;
+  vertical-align: middle;
+  text-align:right;
+  padding-left: 5px;
+  width: 25%;
+ 
+}
+
+.bottom .left {
+ 
+width: 40%;
+ 
+}
+
+.bottom img{
+
+height: 20px;
+margin-left: 5px;
+
+}
+
+.bottom .center {
+ 
+  text-align: center;
+  line-height: 20px;
+  margin-left: 10px;
+ width: 35%;
+}
+}

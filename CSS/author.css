@@ -502,9 +502,6 @@ font-size: 1em;
  text-indent: 2em;
 }
 
-
-
-
  .book_1{
   background-image: url(../img/author/book/background.png);
 margin:  0 auto;
@@ -524,6 +521,7 @@ font-size: 1em;
   justify-content: center;
   align-items: center;
 padding: 10px;
+
 }
 
 .book_1 img{
