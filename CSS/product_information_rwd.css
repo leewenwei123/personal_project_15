@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 100px;
+    width: 95%;
   }
 
 
@@ -51,6 +51,7 @@
   flex-wrap: wrap;
   align-items: center; /* 將所有 .arrt 元素內容垂直置中排列 */
   margin:  0 auto;
+  width: 95%;
 }
 
 .arrt {
@@ -61,7 +62,7 @@
 }
 
 .arrt img {
-  max-height: 200px;
+  max-height: 100px;
   height: auto;
   padding-top: 50px;
 }
@@ -113,8 +114,10 @@ button.add-to-cart:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 400px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 80%;
+
 }
 
 .imgg_l {
@@ -124,17 +127,18 @@ button.add-to-cart:hover {
 .imgg_l img {
   display: block;
   margin: 0 auto;
+
 }
 
 .imgg-r {
   text-align: center;
 }
 
+.imgg .imgg_l img {
+  height: 200px;
+  margin: 0 auto;
 
-
-
-
-
+}
 
 
 
@@ -164,7 +168,7 @@ button.add-to-cart:hover {
        bottom: 0;
        color: #ffffff;
        background-size: auto 100px;
-  
+        width: 414px;
        padding: 10px 10px;
        justify-content: flex-end;
        background-image: url(../img/bottom_img.jpg);
@@ -179,7 +183,7 @@ button.add-to-cart:hover {
     align-self: center;
     vertical-align: middle;
     text-align:right;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 5px;
     width: 25%;
    
@@ -187,14 +191,14 @@ button.add-to-cart:hover {
   
   .bottom .left {
    
-  width: 40%;
+  width: 38%;
    
   }
   
   .bottom img{
   
   height: 20px;
-  margin-left: 5px;
+  margin-left: 2px;
   
   }
   
@@ -202,7 +206,7 @@ button.add-to-cart:hover {
    
     text-align: center;
     line-height: 20px;
-    margin-left: 10px;
+    margin-left: 8px;
    width: 35%;
   }
   }
