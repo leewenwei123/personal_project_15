@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap');
+@media screen and (max-width: 414px) {
+  
+
+  
+  
+  body {
+    background: rgb(175, 66, 66);
+    background: radial-gradient(circle, rgb(0, 0, 0) 4%, rgb(34, 17, 14) 100%);
+    font-family: 'Noto Sans JP', sans-serif;
+    /* 日文 */
+    font-family: 'Noto Serif SC', serif;
+    /* 中文 */
+    width: 414px;
+    margin: 0 auto;
+
+  }
+
+  body::before {
+
+    content: "";
+    background-image: url("../img/information/background.jpg");
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    /* 設置透明度為 50% */
+  }
+
+
+#loading {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  font-size: 16px;
+  display: none;
+
+}
+
+
+.texr_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+ margin-left: 50px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding-top: 200px;
+}
+
+.text_r img{
+width: 60%;
+
+}
+
+
+
+
+  .texr_1 {
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+    padding-bottom: 100px;
+  }
+
+
+  .mid {
+    width: 90%; /* 將容器寬度設為100% */
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .slide {
+    width: 100%; /* 將每個 slide 元素寬度設為100% */
+    margin-right: 0; /* 移除右邊的外邊距 */
+  }
+  .dots {
+    display: none; /* 隱藏點點元素 */
+  }
+
+
+
+  .texr_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    
+  }
+  
+  .texr_2  .text_l {
+    flex: 0 0 50%;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .texr_2  .text_l img {
+  
+    display: none;
+  }
+  
+  .texr_2  .text_r {
+    flex: 0 0 50%;
+    text-align: justify;
+  }
+  
+  .texr_3 {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .texr_3 .text_l {
+    order: 1;
+    padding-left: 100px;
+  }
+  
+  .texr_3 .text_r {
+    order: 2;
+  }
+  
+  .text_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  .text_4 .text_r{
+   margin-left: 80px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+.bottom .pp{
+  font-size: 8px;
+     line-height: 1.6;
+  }
+  
+  
+  
+
+      .bottom {
+        display: flex;
+       padding-top: 5px;
+       position: relative;
+       bottom: 0;
+       color: #ffffff;
+       background-size: auto 100px;
+       padding: 10px 10px;
+       justify-content: flex-end;
+       background-image: url(../img/bottom_img.jpg);
+       background-size: cover;
+       background-position: center center;
+    
+     
+     }
+     
+  .bottom .right {
+   
+    align-self: center;
+    vertical-align: middle;
+    text-align:right;
+    width: 30%;
+   
+   
+  }
+  
+  .bottom .left {
+   
+  width: 40%;
+   
+  }
+  
+  .bottom img{
+  
+  height: 20px;
+  margin-left: 1px;
+  
+  }
+  
+  .bottom .center {
+   
+    text-align: center;
+    line-height: 20px;
+    margin-left: 10px;
+   width: 39%;
+  }
+  }
