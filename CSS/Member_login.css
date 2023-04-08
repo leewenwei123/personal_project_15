@@ -321,7 +321,7 @@ button:hover {
 .bottom {
   display: flex;
   padding-top: 5px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   color: #ffffff;
   width: 100%;

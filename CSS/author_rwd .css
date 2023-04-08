@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap');
+@media screen and (max-width: 414px) {
+  
+
+  
+  
+  body {
+    background: rgb(175, 66, 66);
+    background: radial-gradient(circle, rgb(138, 14, 14) 4%, rgb(34, 17, 14) 100%);
+    font-family: 'Noto Sans JP', sans-serif;
+    /* 日文 */
+    font-family: 'Noto Serif SC', serif;
+    /* 中文 */
+    width: 414px;
+    margin: 0 auto;
+   
+
+  }
+  #loading {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    font-size: 16px;
+    display:none ;
+  }
+  
+  #loading-gif {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink 6s linear infinite;
+    display: none;
+  }
+  
+
+  body::before {
+
+    content: "1";
+    background-image: url("../img/author/background.jpg");
+    position: fixed;
+    background-size: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  
+
+  .top {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    /* border: 1px solid #ffffff; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+.fixed-image{
+  display: none;
+}
+
+  .top_right {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  
+  .top_right p {
+  
+    color: #ffffff;
+    line-height: 1.2;
+    font-size: 8px;
+  
+  }
+
+  .experience {
+    width: 380px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    /* border: 3px solid #ffffff; */
+    margin-top: 50px;
+    margin-bottom: 100px;
+   
+  }
+
+  .experience_left{
+width: 90%;
+
+  }
+
+  .experience_ight img {
+
+    width: 250px;
+    height: 300px;
+    padding-top: 100px;
+    display: none;
+  
+  }
+
+
+  .creation {
+    width: 90%;
+    height: 100%;
+    /* border: 3px solid #ffffff; */
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 15px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+  
+  
+  }
+
+  h2>p {
+    font-size: 16px;
+    width: 377px;
+}
+
+h2{
+width: 412px;
+
+}
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.movie_l, .movie_r {
+  width: 100%;
+}
+
+.movie_l h2, .movie_l p {
+  text-align: left;
+  width: 410px;
+  padding-left: 5px;
+}
+
+.movie_r {
+  margin-top: 20px;
+}
+.movie_r img{
+width: 80%;
+padding-left: 50px;
+
+}
+
+.movie2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  width: 410px;
+
+}
+
+.movie2_l, .movie2_r {
+  width: 100%;
+}
+
+.movie2_l h2, .movie2_l p {
+  text-align: center;
+  width: 410px;
+}
+
+.movie2_r {
+  margin-top: 20px;
+}
+
+
+.movie2 img{
+width: 80%;
+padding-left: 50px;
+padding-top: 50px;
+
+}
+
+
+.movie2 p{
+  width: 400px;
+  margin-left: 5px;
+}
+
+
+
+
+.booook{
+display: none;
+
+}
+
+
+
+
+
+
+  
+
+.bottom .pp{
+font-size: 8px;
+   line-height: 1.6;
+}
+
+
+
+    .bottom .left, .center, .right {
+  width: 34%;
+ 
+
+}
+
+    .bottom {
+      display: flex;
+     padding-top: 5px;
+     position: relative;
+     bottom: 0;
+     color: #ffffff;
+     background-size: auto 100px;
+      width: 100%;
+     padding: 10px 10px;
+     justify-content: flex-end;
+     background-image: url(../img/bottom_img.jpg);
+     background-size: cover;
+     background-position: center center;
+  
+   
+   }
+   
+.bottom .right {
+ 
+  align-self: center;
+  vertical-align: middle;
+  text-align:right;
+  width: 30%;
+ 
+ 
+}
+
+.bottom .left {
+ 
+width: 40%;
+ 
+}
+
+.bottom img{
+
+height: 20px;
+margin-left: 1px;
+
+}
+
+.bottom .center {
+ 
+  text-align: center;
+  line-height: 20px;
+  margin-left: 10px;
+ width: 39%;
+}
+}

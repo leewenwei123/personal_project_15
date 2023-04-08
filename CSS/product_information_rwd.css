@@ -20,13 +20,14 @@
   body::before {
 
     content: "";
-    background-image: url("../img/work/background.jpg");
+    /* background-image: url("../img/product_information/background.jpg"); */
     position: fixed;
     background-size: fixed;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 15%;
+    background-size: cover;
     top: 0;
     left: 0;
     width: 100%;
@@ -36,105 +37,110 @@
     /* 設置透明度為 50% */
   }
 
-  .top {
+   .arrangement_1 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    width: 410px;
-    margin: 0 auto;
-    border-bottom: 2px solid #ffffff;
-    border-top: 2px solid #ffffff;
-   font-size: 6px;
- 
-  }
-  .top img{
-    height: 100%;
- 
-  }
-  
-
-  .videointroduction {
-
-    width: 410px;
-    padding-top: 100px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    padding-left: 100px;
   }
 
-tr{
-
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-
-}
 
 
-
-.videointroduction img {
-  box-shadow: 0 0 10px rgb(254, 254, 254);
-  width: 250px;
-}
-
-
-.mid {
-
-  width: 410px;
-  height: 300px;
+.arrangement_1 {
   display: flex;
-  margin: 0 auto;
-  background-image: url(../img/work/wall.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  /* margin-bottom: 200px; */
-
+  flex-wrap: wrap;
+  align-items: center; /* 將所有 .arrt 元素內容垂直置中排列 */
+  margin:  0 auto;
 }
 
-.slide img {
- height: 100px;
-  padding-top: 100px;
+.arrt {
+  width: 33.33%; /* 在 414px 寬度下，每個 .arrt 元素的寬度為三分之一 */
+  text-align: center;
+  margin-bottom: 10px; /* 加上下方的間距 */
+ 
+}
 
+.arrt img {
+  max-height: 200px;
+  height: auto;
+  padding-top: 50px;
+}
+
+.arrt h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.arrt p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.quantity {
+  margin-top: 10px;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input[type=number] {
+  width: 50px;
+  margin-right: 10px;
+}
+
+button.add-to-cart {
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.add-to-cart:hover {
+  background-color: #555;
 }
 
 
 
-.yt {
-  margin: 0 auto;
-  width: 410px;
-  height: 300px;
+.imgg {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  /* border: 1px solid #ffffff; */
-  padding-bottom: 600px;
-
+  justify-content: center;
+  align-items: center;
+  padding-top: 400px;
+  padding-bottom: 200px;
 }
 
-.ytr{
-  color: #ffffff;
-  line-height: 1.6;
-  margin: 10px;
-  padding-top: 5px;
-  order: 1;
-  padding-bottom: 10px;
-  line-height: 1.6;
-  }
-
-
-.ytl{
-  order: 2;
-  padding-bottom: 250px;
-  padding-left: 50px;
+.imgg_l {
+  margin-bottom: 20px;
 }
 
-.my-video {
-  width: 80%; /* 设置宽度为父元素宽度的50% */
+.imgg_l img {
+  display: block;
+  margin: 0 auto;
 }
+
+.imgg-r {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -144,21 +150,21 @@ flex-wrap: nowrap;
   }
   
   
-  
+/*   
       .bottom .left, .center, .right {
     width: 34%;
    
   
-  }
+  } */
   
       .bottom {
         display: flex;
        padding-top: 5px;
-       position: relative;
+       position: fixed;
        bottom: 0;
        color: #ffffff;
        background-size: auto 100px;
-        width: 100%;
+  
        padding: 10px 10px;
        justify-content: flex-end;
        background-image: url(../img/bottom_img.jpg);
@@ -172,22 +178,23 @@ flex-wrap: nowrap;
    
     align-self: center;
     vertical-align: middle;
-    text-align:left;
-    width: 30%;
-   margin-left: 20px;
-   
+    text-align:right;
+    padding-left: 15px;
+    padding-right: 5px;
+    width: 25%;
    
   }
   
   .bottom .left {
    
-  width: 45%;
+  width: 40%;
    
   }
   
   .bottom img{
   
   height: 20px;
+  margin-left: 5px;
   
   }
   
@@ -195,7 +202,7 @@ flex-wrap: nowrap;
    
     text-align: center;
     line-height: 20px;
-
-   width: 40%;
+    margin-left: 10px;
+   width: 35%;
   }
   }
