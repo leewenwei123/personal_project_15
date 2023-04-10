@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./CSS/product_information.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
   <form action="#">
     <link rel="stylesheet" href="./CSS/product_information_rwd.css">
@@ -23,25 +24,81 @@
   <head>
 
 
-    <!-- 導覽列 -->
-    <nav>
-      <ul>
-      </li><a href="./index.html"><img src="./img/logo.png" height="50px"></a></li>
+<!-- 漢堡列按鈕 -->
 
-        <li><a class="member" href="./member_login.html">會員登入</a></li>
-        <li><a class="album" href="./work.html">影集介紹</a></li>
-        <li><a class="author" href="./author.html">作者介紹</a></li>
-        <li><a class="box" href="./product_information.html">商品購買</a></li>
-        <li><a class="information" href="./information.html">最新消息</a></li>
-        <li><a class="connection" href="./contact_us.html">聯絡我們</a></li>
-        <li><a class="shoppingg" href="./shopping _cart.html"></a>
-        </li>
-      </ul>
-    </nav>
+<button class="menu-btn">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+<div class="rwd">
 
 
 
-    <!-- 網頁內容在下面 -->
+
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="./index.html"><img src="./img/nav/icon/1.jpg" alt="" width="20" height="auto">首頁</a></li>
+
+      <li><a href="./member_login.html"> <img src="./img/nav/icon/2.jpg" alt="" width="30" height="auto">會員登入</a></li>
+
+      <li><a href="./work.html"> <img src="./img/nav/icon/3.jpg" alt="" width="30" height="auto">影集介紹</a></li>
+
+      <li><a href="./author.html"> <img src="./img/nav/icon/4.jpg" alt="" width="30" height="auto">作者介紹</a></li>
+
+      <li><a href="./product_information.html"><img src="./img/nav/icon/5.jpg" alt="" width="30" height="auto">商品購買</a></li>
+
+      <li><a href="./information.html"><img src="./img/nav/icon/8.jpg" alt="" width="30" height="auto">最新消息</a></li>
+
+      <li><a href="contact_us.html"><img src="./img/nav/icon/6.jpg" alt="" width="30" height="auto">聯絡我們</a></li>
+
+      <li><a href="./shopping _cart.html"><img src="./img/nav/icon/6.jpg" alt="" width="30" height="auto">購物車</a></li>
+
+
+      <li>
+        <img src="./img/icon/fb.svg" alt="" width="25" height="auto">
+        <img src="./img/icon/ig.svg" alt="" width="30" height="auto">
+        <img src="./img/icon/tw.svg" alt="" width="30" height="auto">
+      </li>
+
+    </ul>
+  </nav>
+
+</div>
+
+
+
+
+<!-- 導覽列 -->
+<div class="pc">
+
+  <nav class="nav-links">
+    <ul>
+      </li><a href="./index.html">
+        <img src="./img/logo.png" height="50px">
+      </a></li>
+
+
+      <li><a class="member" href="./member_login.html">會員登入</a></li>
+      <li><a class="album" href="./work.html">影集介紹</a></li>
+      <li><a class="author" href="./author.html">作者介紹</a></li>
+      <li><a class="box" href="./product_information.html">商品購買</a></li>
+      <li><a class="information" href="./information.html">最新消息</a></li>
+      <li><a class="connection" href="./contact_us.html">聯絡我們</a></li>
+      <li><a class="shoppingg" href="./shopping _cart.html"></a>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+
+
+
+
+<!-- 網頁內容在下面 -->
+
 
 
 <div class="mid">
@@ -279,6 +336,68 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+
+
+// 取得漢堡列按鈕及導覽列元素
+const menuBtn = document.querySelector(".menu-btn");
+    const navbar = document.querySelector(".navbar");
+    const rwd = document.querySelector(".rwd");
+    // 當漢堡列按鈕被點
+    menuBtn.addEventListener('click', function () {
+      console.log('test')
+      menuBtn.classList.toggle("open");
+
+      // 切換導覽列的開關狀態
+      navbar.classList.toggle("open");
+
+      // 典集打開RWD
+      // rwd.style.display = 'block';
+    })
+
+    const navbarItems = document.querySelectorAll(".navbar li");
+
+    navbarItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        // 移除所有項目的 active class
+        navbarItems.forEach((item) => {
+          item.classList.remove("active");
+        });
+
+        // 為被點擊的項目加上 active class
+        item.classList.add("active");
+      });
+    });
+
+    //rwd監聽到刷新葉面
+    window.onload = function () {
+      console.log('重新整理頁面時');
+      resizeFunc();
+    }
+    const resizeFunc = function () {
+      if (window.innerWidth <= 414) {
+        console.log(`>414px 打開rwd`)
+        rwd.style.display = 'block';
+
+      } else {
+        console.log(`<414px 關閉rwd`)
+        rwd.style.display = 'none';
+      }
+    };
+
+
+    window.addEventListener('resize', function () {
+      resizeFunc();
+      console.log(`偵測到螢幕尺寸改變`)
+    })
+
+
+
+
+
+
+// 上面是顯示手機的nav
+
+
     </script>
 
 </body>

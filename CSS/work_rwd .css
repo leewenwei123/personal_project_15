@@ -3,7 +3,133 @@
 @media screen and (max-width: 414px) {
   
 
-  
+  .pc{
+    display: none;
+    }
+    
+    /* 導覽列的初始樣式 */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: -300px; /* 導覽列往左移出畫面 */
+      width: 250px;
+      height: 100%;
+      background-color: #000000;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+      transition: left 0.3s ease-in-out;
+      z-index: 9999;
+    }
+    
+    /* 導覽列內的連結樣式 */
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+    }
+    
+    .navbar li {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    
+    .navbar li {
+      font-size: 1.6rem;
+      line-height: 3rem;
+      transition: all 0.3s ease;
+    }
+    
+    .navbar li.active {
+      font-size: 2rem;
+      line-height: 4rem;
+    }
+    
+    
+    
+    .navbar a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 25px;
+      border-bottom: 1px solid #000000;
+      
+    }
+    
+    .navbar a:hover {
+      background-color: #000000;
+      border-bottom:  2px solid #ffffff;
+      font-size: 25px;
+    }
+    
+    /* 漢堡列按鈕的樣式 */
+    .menu-btn {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 30px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 10000;
+    }
+    
+    .bar {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: #f7f7f7;
+      margin: 6px auto;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    /* 漢堡列按鈕的動畫效果 */
+    .menu-btn.open .bar:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+    
+    .menu-btn.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-btn.open .bar:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+    
+    /* 導覽列展開後的樣式 */
+    .navbar.open {
+      left: 0; /* 導覽列滑入畫面 */
+    }
+    
+    nav img{
+      border-radius: 50%;
+      margin-right: 40px;
+      height: auto;
+    }
+    .navbar ul li:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    
+    .navbar ul li:last-child img {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+      /* 上面是RWD的nav */
   
   body {
     background: rgb(175, 66, 66);
@@ -192,7 +318,7 @@ flex-wrap: nowrap;
   }
   
   .bottom .center {
-   
+    margin-top: 15px;
     text-align: center;
     line-height: 20px;
 
