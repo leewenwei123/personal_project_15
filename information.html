@@ -393,7 +393,24 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+AOS.init();
+       
+    window.onload = function () {
+      console.log('重新整理頁面時');
+      resizeFunc();
+    }
+    const resizeFunc = function () {
+      if (window.innerWidth <= 414) {
+        console.log(`>414px 打開rwd`)
+        rwd.style.display = 'block';
+
+      } else {
+        console.log(`<414px 關閉rwd`)
+        rwd.style.display = 'none';
+      }
+    };
+//rwd監聽到刷新葉面
+      
 
       var slideIndex = 1;
       showSlides(slideIndex);
@@ -496,22 +513,7 @@ window.addEventListener('scroll', function() {
       });
     });
 
-    //rwd監聽到刷新葉面
-    window.onload = function () {
-      console.log('重新整理頁面時');
-      resizeFunc();
-    }
-    const resizeFunc = function () {
-      if (window.innerWidth <= 414) {
-        console.log(`>414px 打開rwd`)
-        rwd.style.display = 'block';
-
-      } else {
-        console.log(`<414px 關閉rwd`)
-        rwd.style.display = 'none';
-      }
-    };
-
+   
 
     window.addEventListener('resize', function () {
       resizeFunc();

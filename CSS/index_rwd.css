@@ -480,6 +480,7 @@ li:hover .caption {
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
+  display: block;
 }
 
 

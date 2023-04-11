@@ -185,6 +185,26 @@
     <script>
       AOS.init();
 
+  //rwd監聽到刷新葉面
+  window.onload = function () {
+      console.log('重新整理頁面時');
+      resizeFunc();
+    }
+    const resizeFunc = function () {
+      if (window.innerWidth <= 414) {
+        console.log(`>414px 打開rwd`)
+        rwd.style.display = 'block';
+
+      } else {
+        console.log(`<414px 關閉rwd`)
+        rwd.style.display = 'none';
+      }
+    };
+
+
+
+
+
 
   // 選取所有的 input 元素
   const qtyInputs = document.querySelectorAll('.qty');
@@ -255,22 +275,7 @@
       });
     });
 
-    //rwd監聽到刷新葉面
-    window.onload = function () {
-      console.log('重新整理頁面時');
-      resizeFunc();
-    }
-    const resizeFunc = function () {
-      if (window.innerWidth <= 414) {
-        console.log(`>414px 打開rwd`)
-        rwd.style.display = 'block';
-
-      } else {
-        console.log(`<414px 關閉rwd`)
-        rwd.style.display = 'none';
-      }
-    };
-
+  
 
     window.addEventListener('resize', function () {
       resizeFunc();
