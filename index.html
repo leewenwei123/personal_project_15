@@ -109,7 +109,20 @@
 
     <div class="text">
       <div id="myText"></div>
+    </div>
+    <div class="imggg">
 
+      <img class="rwd_a" src="./img/index/rwd/a_rwd.png" alt="">
+      <img class="rwd_b" src="./img/index/rwd/b__rwd.png" alt="">
+      <img class="rwd_c" src="./img/index/rwd/c__rwd.png" alt="">
+      <img class="rwd_d" src="./img/index/rwd/d__rwd.png"alt="">
+      <img class="rwd_e" src="./img/index/rwd/e__rwd.png" alt="">
+      <img class="rwd_f" src="./img/index/rwd/f__rwd.png" alt="">
+      <img class="rwd_g" src="./img/index/rwd/g__rwd.png" alt="">
+      <img class="fu" src="./img/index/rwd/fu.png" alt="">
+      <img class="river" src="./img/index/rwd/river.png" alt="">
+      
+      
     </div>
 
     <div class="word">
@@ -143,10 +156,38 @@
 
     <img src="./img/index/black_cloud/black_cloud3.png" id="image13">
 
+
+
+    
   </div>
+
+  <div class="mid_rwd">
+    <ul>
+    <li><img src="./img/index/figure/1.jpg" alt="">
+      <div class="caption">富江</div></li> 
+    <li> <img src="./img/index/figure/2.jpg" alt="">
+      <div class="caption">十字路口美少年</div></li> 
+    <li> <img src="./img/index/figure/3.jpg" alt="">
+      <div class="caption">淵</div></li> 
+    <li> <img src="./img/index/figure/4.jpg" alt="">
+      <div class="caption">漩渦</div></li> 
+    <li> <img src="./img/index/figure/5.jpg" alt="">
+      <div class="caption">雙一</div></li> 
+    <li> <img src="./img/index/figure/6.jpg" alt="">
+      <div class="caption">祖先的頭蓋骨</div></li> 
+  </ul>
+    
+    
+    </div>
+    
+
 
   <!-- 上面是蝸牛層 -->
 
+
+
+
+  
   <div class="float">
 
     <div class="wooden">
@@ -182,6 +223,21 @@
 
 
   </div>
+
+
+
+
+  <!-- 下面是一個rwd的圖 -->
+
+
+
+
+
+
+
+
+
+    <!-- 上面是一個rwd的圖 -->
 
   <!-- 上面是圖片輪播層 -->
 
@@ -237,7 +293,7 @@
 
   <div class="bottom">
     <div class="left">
-      <p class="pp">營業人名稱：伊藤潤二幫忙推廣股份有限公司<br>
+      <p class="pp" >營業人名稱：伊藤潤二幫忙推廣股份有限公司<br>
         統一編號：50869504<br>
         <冨江>由Tibame所製作。<br>
     </div>
@@ -305,6 +361,26 @@
 
     // 上面是gif圖的顯示動畫
 
+// 檢查localStorage是否已經存在名為played的值
+if (!localStorage.getItem('played')) {
+  // 如果played不存在，設置CSS動畫
+  document.getElementById('loading').style.animation = 'blink 6s linear infinite';
+  // 設置played值為true
+  localStorage.setItem('played', 'true');
+} else {
+  // 如果played已經存在，停止動畫
+  document.getElementById('loading').style.animation = 'none';
+}
+
+
+
+
+
+
+
+
+
+
 
     // 取得漢堡列按鈕及導覽列元素
     const menuBtn = document.querySelector(".menu-btn");
@@ -364,6 +440,7 @@
 
 
 // 上面是顯示手機的nav
+
 
 
 

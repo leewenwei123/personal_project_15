@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+SC:wght@300;400;500;600;700;900&display=swap');
 @media screen and (max-width: 414px) {
   
+ 
   .pc{
     display: none;
     }
@@ -74,11 +75,15 @@
       border: none;
       cursor: pointer;
       z-index: 10000;
+      
     }
+
+   
+    
     
     .bar {
       display: block;
-      width: 100%;
+      width: 35px;
       height: 4px;
       background-color: #f7f7f7;
       margin: 6px auto;
@@ -129,7 +134,10 @@
     
     
       /* 上面是RWD的nav */
-  
+
+
+
+
   
   body {
     background: rgb(175, 66, 66);
@@ -163,18 +171,23 @@ body::before {
 
   
  .container {
+  
   max-width: 414px;
   margin: 0 auto;
   padding: 20px;
   background-color: #000000;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  height: 100%;
+
 }
 
-h1 {
+.container h1 {
   font-size: 1.5rem;
   text-align: center;
     background-color: #000000;
+    color: #f7f7f7;
 }
 
 table {
@@ -192,19 +205,19 @@ thead th {
        color: #ffffff;
 }
 
-td {
+.container td {
   padding: 10px 0;
   vertical-align: middle;
     background-color: #000000;
     color: #ffffff;
 }
 
-img {
+.container img {
   display: block;
   margin: 0 auto;
 }
 
-.qty {
+.container .qty {
   width: 50px;
   text-align: center;
 }
@@ -247,25 +260,33 @@ tfoot td {
 
 
 
-  .bottom .pp{
-    font-size: 8px;
-       line-height: 1.6;
-    }
-    
-    
-    .bottom {
+.bottom .pp{
+  font-size: 8px;
+     line-height: 1.6;
+  }
+  
+  
+  
+      .bottom .left, .center, .right {
+    width: 34%;
+   
+  
+  }
+  
+      .bottom {
         display: flex;
        padding-top: 5px;
        position: fixed;
        bottom: 0;
        color: #ffffff;
        background-size: auto 100px;
-        width: 414px;
+    
        padding: 10px 10px;
        justify-content: flex-end;
        background-image: url(../img/bottom_img.jpg);
        background-size: cover;
        background-position: center center;
+      
     
      
      }
@@ -273,32 +294,35 @@ tfoot td {
   .bottom .right {
    
     align-self: center;
-  display: flex;
-justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 5px;
+    vertical-align: middle;
+    text-align:right;
+    padding-left: 5px;
     width: 25%;
    
   }
   
   .bottom .left {
    
-  width: 38%;
+  text-align: justify;
+  width: 100%;
+  
    
   }
   
   .bottom img{
   
   height: 20px;
-  margin-left: 2px;
-  
+  margin-left: 5px;
+  display: none;
   }
   
   .bottom .center {
-margin-top: 15px;
+    margin-top: 15px;
     text-align: center;
     line-height: 20px;
-    margin-left: 8px;
+    margin-left: 10px;
    width: 35%;
+   display: none;
+  
   }
   }

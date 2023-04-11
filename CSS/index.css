@@ -631,6 +631,11 @@ height: 230px;
 
 
 
+.mid_rwd{
+  display: none;
+}
+
+
 
 
 
@@ -686,5 +691,6 @@ height: 230px;
 
 height: 25px;
 margin-left: 5px;
+
 
 }

@@ -280,21 +280,21 @@ button.add-to-cart:hover {
   }
   
   
-/*   
+  
       .bottom .left, .center, .right {
     width: 34%;
    
   
-  } */
+  }
   
       .bottom {
         display: flex;
        padding-top: 5px;
-       position: fixed;
+       position: relative;
        bottom: 0;
        color: #ffffff;
        background-size: auto 100px;
-        width: 414px;
+    
        padding: 10px 10px;
        justify-content: flex-end;
        background-image: url(../img/bottom_img.jpg);
@@ -309,30 +309,33 @@ button.add-to-cart:hover {
     align-self: center;
     vertical-align: middle;
     text-align:right;
-    padding-left: 10px;
-    padding-right: 5px;
+    padding-left: 5px;
     width: 25%;
    
   }
   
   .bottom .left {
    
-  width: 38%;
+  text-align: justify;
+  width: 100%;
+  
    
   }
   
   .bottom img{
   
   height: 20px;
-  margin-left: 2px;
-  
+  margin-left: 5px;
+  display: none;
   }
   
   .bottom .center {
     margin-top: 15px;
     text-align: center;
     line-height: 20px;
-    margin-left: 8px;
+    margin-left: 10px;
    width: 35%;
+   display: none;
+  
   }
   }

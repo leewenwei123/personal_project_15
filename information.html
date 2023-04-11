@@ -101,6 +101,7 @@
 
 
 
+
     <div class="texr_1">
 
       <div class="text_l" data-aos="fade-up" data-aos-duration="3000">
@@ -439,6 +440,30 @@
           currentSlide(dotIndex);
         });
       }
+
+
+
+      
+// 取得要浮現的元素
+var fadeinElements = document.querySelectorAll('.fade-in');
+
+// 監聽滾動事件
+window.addEventListener('scroll', function() {
+  // 視窗的底部位置
+  var bottomOfWindow = window.innerHeight + window.scrollY;
+
+  // 依次檢查每個要浮現的元素
+  fadeinElements.forEach(function(element) {
+    // 元素的頂部位置
+    var topOfElement = element.offsetTop;
+
+    // 如果元素的頂部位置在視窗的底部位置上面，就讓它浮現出來
+    if (bottomOfWindow > topOfElement) {
+      element.style.opacity = '1';
+    }
+  });
+});
+
 
 
     // 取得漢堡列按鈕及導覽列元素
