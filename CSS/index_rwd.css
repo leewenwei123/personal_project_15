@@ -48,7 +48,7 @@ display: none;
 
 .navbar a {
   display: block;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   color: #ffffff;
   font-size: 25px;
@@ -531,17 +531,17 @@ li:hover .caption {
 }
 
 .imggg .fu {
-  left: -54%;
-  top: 22%;
-  width: 205%;
+  left:24%;
+  top: 36%;
+  width: 50%;
   animation: none;
   overflow: hidden;
   filter: drop-shadow(3px 3px 3px rgb(241, 4, 4));
 }
 .imggg .river {
-  left: -54%;
-  top: 42%;
-  width: 205%;
+  left:24%;
+  top: 16%;
+  width: 50%;
   animation: none;
   overflow: hidden;
   filter: drop-shadow(3px 3px 3px rgb(241, 4, 4));
