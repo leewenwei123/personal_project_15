@@ -206,11 +206,13 @@
       AOS.init();
 
      // 取得漢堡列按鈕及導覽列元素
-    const menuBtn = document.querySelector(".menu-btn");
+     const menuBtn = document.querySelector(".menu-btn");
     const navbar = document.querySelector(".navbar");
     const rwd = document.querySelector(".rwd");
     // 當漢堡列按鈕被點
-    menuBtn.addEventListener('click', function () {
+    menuBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+      
       console.log('test')
       menuBtn.classList.toggle("open");
 

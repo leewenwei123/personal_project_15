@@ -482,23 +482,23 @@
       })
 
 
-      // 取得漢堡列按鈕及導覽列元素
-      const menuBtn = document.querySelector(".menu-btn");
-      const navbar = document.querySelector(".navbar");
-      const rwd = document.querySelector(".rwd");
-      // 當漢堡列按鈕被點
-      menuBtn.addEventListener('click', function (e) {
+     // 取得漢堡列按鈕及導覽列元素
+     const menuBtn = document.querySelector(".menu-btn");
+    const navbar = document.querySelector(".navbar");
+    const rwd = document.querySelector(".rwd");
+    // 當漢堡列按鈕被點
+    menuBtn.addEventListener('click', function (e) {
         e.preventDefault();
-        console.log('test')
-        menuBtn.classList.toggle("open");
+      
+      console.log('test')
+      menuBtn.classList.toggle("open");
 
-        // 切換導覽列的開關狀態
-        navbar.classList.toggle("open");
+      // 切換導覽列的開關狀態
+      navbar.classList.toggle("open");
 
-        // 典集打開RWD
-        // rwd.style.display = 'block';
-      })
-
+      // 典集打開RWD
+      // rwd.style.display = 'block';
+    })
       const navbarItems = document.querySelectorAll(".navbar li");
 
       navbarItems.forEach((item) => {

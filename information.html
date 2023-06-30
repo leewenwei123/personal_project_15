@@ -488,7 +488,9 @@ window.addEventListener('scroll', function() {
     const navbar = document.querySelector(".navbar");
     const rwd = document.querySelector(".rwd");
     // 當漢堡列按鈕被點
-    menuBtn.addEventListener('click', function () {
+    menuBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+      
       console.log('test')
       menuBtn.classList.toggle("open");
 
